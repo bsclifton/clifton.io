@@ -1,0 +1,47 @@
+/*http://matthewjamestaylor.com/blog/keeping-footers-at-the-bottom-of-the-page*/
+html,
+body {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+}
+#container {
+   min-height: 100%;
+   position: relative;
+}
+#body {
+   padding:10px;
+   padding-bottom:380px;
+}
+#footer-large {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 380px;
+}
+
+div ul.nav.navbar-nav a { text-transform: capitalize; }
+a.navbar-brand { text-transform: uppercase; }
+
+div#footer-top { background-color: #4f4f4f; text-align: left; }
+div#footer-bottom { background-color: #6d6d6d; text-align: left; }
+footer > div#footer-top > div.container { padding-top: 20px; padding-bottom: 20px; }
+footer > div#footer-bottom > div.container { padding-top: 10px; padding-bottom: 10px; font-size: 10pt; }
+footer div { color: #ccc; }
+footer h4 { color: #fff; text-transform: capitalize; padding-bottom: 5px; border-bottom: solid 1px #6f6f6f; }
+
+.icons { margin-left: 20px; display: inline-block; background-image: url(sprite.png); width: 64px; height: 64px; }
+
+/* GitHub - https://github.com/logos */
+.github { background-position: 0px 0px; }
+.github:hover { background-position: 0px -64px; }
+
+/* LinkedIn - https://brand.linkedin.com/visual-identity/logo */
+.linked-in { background-position: -64px 0px; width: 76px; }
+.linked-in:hover { background-position: -64px -64px; }
+
+/* Twitter - https://about.twitter.com/press/brand-assets */
+.twitter { background-position: -140px 0px; width: 65px; margin-left: 0px; }
+.twitter:hover { background-position: -140px -64px; }
+
+.portrait { background-position: -205px 0px; width: 128px; height: 128px; margin: 0px; }
