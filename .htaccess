@@ -1,4 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^clifton\.io [NC]
-RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://clifton.io/$1 [R,L]
