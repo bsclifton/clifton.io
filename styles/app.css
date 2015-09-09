@@ -1,30 +1,35 @@
-/*http://matthewjamestaylor.com/blog/keeping-footers-at-the-bottom-of-the-page*/
+/***********************************************************************************
+__________        .__                _________ .__  .__  _____  __
+\______   \_______|__|____    ____   \_   ___ \|  | |__|/ ____\/  |_  ____   ____
+ |    |  _/\_  __ \  \__  \  /    \  /    \  \/|  | |  \   __\\   __\/  _ \ /    \
+ |    |   \ |  | \/  |/ __ \|   |  \ \     \___|  |_|  ||  |   |  | (  <_> )   |  \
+ |______  / |__|  |__(____  /___|  /  \______  /____/__||__|   |__|  \____/|___|  /
+        \/                \/     \/          \/                                 \/
+
+***********************************************************************************/
+
 html,
 body {
-   margin: 0;
-   padding: 0;
-   height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
-#container {
-   min-height: 100%;
-   position: relative;
-}
-#body {
-   padding:10px;
-   padding-bottom:380px;
+#wrap {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -280px; /* Negative indent footer by its height */
+  padding: 0 0 280px; /* Pad bottom by footer height */
 }
 #footer-large {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 380px;
+  width: 100%;
+  height: 280px;
 }
 
 div ul.nav.navbar-nav a { text-transform: capitalize; }
 a.navbar-brand { text-transform: uppercase; }
 
-div#footer-top { background-color: #4f4f4f; text-align: left; }
-div#footer-bottom { background-color: #6d6d6d; text-align: left; }
+div#footer-top { background-color: #4f4f4f; text-align: left; min-height: 241px; }
+div#footer-bottom { background-color: #6d6d6d; text-align: center; height: 39px; }
 footer > div#footer-top > div.container { padding-top: 20px; padding-bottom: 20px; }
 footer > div#footer-bottom > div.container { padding-top: 10px; padding-bottom: 10px; font-size: 10pt; }
 footer div { color: #ccc; }
@@ -44,4 +49,4 @@ footer h4 { color: #fff; text-transform: capitalize; padding-bottom: 5px; border
 .twitter { background-position: -140px 0px; width: 65px; margin-left: 0px; }
 .twitter:hover { background-position: -140px -64px; }
 
-.portrait { background-position: -205px 0px; width: 128px; height: 128px; margin: 0px; }
+.portrait { background-position: -205px 0px; width: 128px; height: 128px; margin: 0px; border: solid 1px #6d6d6d; }
