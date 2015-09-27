@@ -50,3 +50,14 @@ footer h4 { color: #fff; text-transform: capitalize; padding-bottom: 5px; border
 .twitter:hover { background-position: -140px -64px; }
 
 .portrait { background-position: -205px 0px; width: 128px; height: 128px; margin: 0px; border: solid 1px #6d6d6d; }
+
+.loading {
+  display: inline-block;
+  background-image: url(ajax-loader.gif);
+  width: 16px;
+  height: 11px;
+}
+
+#blog-entries p a {
+  color: #ccc;
+}
