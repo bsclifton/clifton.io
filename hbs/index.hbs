@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Brian Clifton</title>
+  <title>{{title}}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Brian Clifton">
-  <meta name="description" content="Brian Clifton is an American computer programmer and businessman living in Chandler, Arizona.">
-  <meta name="keywords" content="Programming, Web Development, Consulting, Training, Hosting, C++, C#, ASP.NET, Web API, HTML, CSS, JavaScript, Ruby, Rails, MySQL, SQL Server, Databases">
+  <meta name="author" content="{{meta-author}}">
+  <meta name="description" content="{{meta-description}}">
+  <meta name="keywords" content="{{meta-keywords}}">
   <link rel="canonical" href="https://clifton.io/">
   <link rel="stylesheet" href="css/clifton-io-website.min.css">
 </head>
@@ -22,11 +22,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand active" href="/">Brian Clifton</a>
+          <a class="navbar-brand active" href="/">{{meta-author}}</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://blog.clifton.io">blog</a></li>
+            <li><a href="{{my-blog-url}}">blog</a></li>
           </ul>
         </div>
       </div>
@@ -46,9 +46,9 @@
               I've been writing code since 1993 and I want to share all the things I've learned along the way.
             </p>
             <p>
-              I'm always learning new things, <a title="My GitHub profile" href="https://github.com/bsclifton" target="_blank">contributing on GitHub</a>,
-              <a title="My Twitter account" href="https://twitter.com/MorgCityCoder" target="_blank">tweeting about coding</a>,
-              and <a title="My blog" href="https://blog.clifton.io/">blogging</a>.
+              I'm always learning new things, <a title="My GitHub profile" href="{{my-github-url}}" target="_blank">contributing on GitHub</a>,
+              <a title="My Twitter account" href="{{my-twitter-url}}" target="_blank">tweeting about coding</a>,
+              and <a title="My blog" href="{{my-blog-url}}">blogging</a>.
             </p>
           </div>
         </div>
@@ -70,9 +70,9 @@
           <div class="col-md-4">
             <h4>follow me</h4>
             <div>
-              <a title="Twitter" class="icons twitter" href="https://twitter.com/MorgCityCoder"></a>
-              <a title="GitHub" class="icons github" href="https://github.com/bsclifton"></a>
-              <a title="LinkedIn" class="icons linked-in" href="https://www.linkedin.com/in/bsclifton"></a>
+              <a title="Twitter" class="icons twitter" href="{{my-twitter-url}}"></a>
+              <a title="GitHub" class="icons github" href="{{my-github-url}}"></a>
+              <a title="LinkedIn" class="icons linked-in" href="{{my-linkedin-url}}"></a>
             </div>
           </div>
         </div>
@@ -81,14 +81,14 @@
     <div id="footer-bottom">
       <div class="container">
         <div class="row" id="footer-bottom-content">
-          &copy; Copyright 2016, Brian Clifton. All rights reserved.
+          &copy; Copyright 2016, {{meta-author}}. All rights reserved.
         </div>
       </div>
     </div>
   </footer>
   <script src="js/clifton-io-website.min.js"></script>
   <script>
-    registerAnalytics('UA-27108697-5');
+    registerAnalytics('{{ga-tracking-id}}');
     getRecentBlogPosts();
   </script>
 </body>

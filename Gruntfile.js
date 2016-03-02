@@ -35,12 +35,22 @@ module.exports = function(grunt) {
           'css/<%= pkg.name %>.min.css': ['<%= concat.css.dest %>']
         }
       }
+    },
+    'compile-handlebars': {
+      target:{
+        files: [{
+          src: 'hbs/index.hbs',
+          dest: 'index.html'
+        }],
+        templateData: 'hbs/config.json'
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-compile-handlebars');
 
-  grunt.registerTask('default', ['concat', 'uglify', 'cssmin']);
+  grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'compile-handlebars']);
 };

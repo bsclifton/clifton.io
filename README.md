@@ -16,4 +16,5 @@ You can then clone the repo and install npm and bower dependencies:
 git clone git@github.com:clifton-io/clifton.io.git
 cd clifton.io
 npm install && bower install
+grunt
 ```
