@@ -1,0 +1,22 @@
+{
+  "name": "clifton-io-website",
+  "description": "The HTML / resources for the https://clifton.io landing page",
+  "main": "index.html",
+  "authors": [
+    "Brian Clifton"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/clifton-io/website",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "handlebars": "^4.0.5"
+  }
+}

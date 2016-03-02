@@ -35,7 +35,7 @@ footer > div#footer-bottom > div.container { padding-top: 10px; padding-bottom: 
 footer div { color: #ccc; }
 footer h4 { color: #fff; text-transform: capitalize; padding-bottom: 5px; border-bottom: solid 1px #6f6f6f; }
 
-.icons { margin-left: 20px; display: inline-block; background-image: url(sprite.png); width: 64px; height: 64px; }
+.icons { margin-left: 20px; display: inline-block; background-image: url(../i/sprite.png); width: 64px; height: 64px; }
 
 /* GitHub - https://github.com/logos */
 .github { background-position: 0px 0px; }
@@ -53,7 +53,7 @@ footer h4 { color: #fff; text-transform: capitalize; padding-bottom: 5px; border
 
 .loading {
   display: inline-block;
-  background-image: url(ajax-loader.gif);
+  background-image: url(../i/ajax-loader.gif);
   width: 16px;
   height: 11px;
 }
