@@ -1,9 +1,15 @@
 module.exports = function(grunt) {
-
-  // Project configuration.
-  // Using this as a starting point: http://gruntjs.com/sample-gruntfile
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    copy: {
+      main: {
+        files: [
+          { expand: true, src: ['i/**'], dest: 'dist/' },
+          { expand: true, src: ['robots.txt'], dest: 'dist/' },
+          { expand: true, src: ['web.config'], dest: 'dist/' }
+        ]
+      }
+    },
     concat: {
       js: {
         src: [
@@ -12,45 +18,48 @@ module.exports = function(grunt) {
           'bower_components/bootstrap/dist/js/bootstrap.min.js',
           'js/app.js'
         ],
-        dest: 'js/<%= pkg.name %>.js'
+        dest: 'dist/js/<%= pkg.name %>.js'
       },
       css: {
         src: [
           'bower_components/bootstrap/dist/css/bootstrap.min.css',
           'css/app.css'
         ],
-        dest: 'css/<%= pkg.name %>.css'
+        dest: 'dist/css/<%= pkg.name %>.css'
       }
     },
     uglify: {
       target: {
         files: {
-          'js/<%= pkg.name %>.min.js': ['<%= concat.js.dest %>']
+          'dist/js/<%= pkg.name %>.min.js': ['<%= concat.js.dest %>']
         }
       }
     },
     cssmin: {
       target: {
         files: {
-          'css/<%= pkg.name %>.min.css': ['<%= concat.css.dest %>']
+          'dist/css/<%= pkg.name %>.min.css': ['<%= concat.css.dest %>']
         }
       }
     },
+    clean: ["<%= concat.js.dest %>", "<%= concat.css.dest %>"],
     'compile-handlebars': {
       target:{
         files: [{
           src: 'hbs/index.hbs',
-          dest: 'index.html'
+          dest: 'dist/index.html'
         }],
         templateData: 'hbs/config.json'
       }
     }
   });
 
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-compile-handlebars');
 
-  grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'compile-handlebars']);
+  grunt.registerTask('default', ['copy', 'concat', 'uglify', 'cssmin', 'clean', 'compile-handlebars']);
 };

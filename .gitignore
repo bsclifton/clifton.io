@@ -1,6 +1,4 @@
 bower_components
 node_modules
 Thumbs.db
-js/clifton-io-website*.js
-css/clifton-io-website*.css
-index.html
+dist
