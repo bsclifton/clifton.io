@@ -6,7 +6,7 @@ module.exports = function(grunt) {
         files: [
           { expand: true, src: ['i/**'], dest: 'dist/' },
           { expand: true, src: ['robots.txt'], dest: 'dist/' },
-          { expand: true, src: ['web.config'], dest: 'dist/' }
+          { expand: true, src: ['.htaccess'], dest: 'dist/' }
         ]
       }
     },
@@ -42,7 +42,13 @@ module.exports = function(grunt) {
         }
       }
     },
-    clean: ["<%= concat.js.dest %>", "<%= concat.css.dest %>"],
+    clean: {
+      dist: [ "dist/" ],
+      'combined-files': [
+        "<%= concat.js.dest %>",
+        "<%= concat.css.dest %>"
+      ],
+    },
     'compile-handlebars': {
       target:{
         files: [{
@@ -50,6 +56,24 @@ module.exports = function(grunt) {
           dest: 'dist/index.html'
         }],
         templateData: 'hbs/config.json'
+      }
+    },
+    secret: grunt.file.readJSON('secret.json'),
+    environments: {
+      options: {
+        local_path: 'dist',
+        current_symlink: 'clifton.io',
+        deploy_path: '/home/<%= secret.production.username %>',
+        release_root: 'clifton.io-releases'
+      },
+      production: {
+        options: {
+            host: '<%= secret.production.host %>',
+            username: '<%= secret.production.username %>',
+            password: '<%= secret.production.password %>',
+            port: '<%= secret.production.port %>',
+            releases_to_keep: '10'
+        }
       }
     }
   });
@@ -60,6 +84,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-compile-handlebars');
+  grunt.loadNpmTasks('grunt-ssh-deploy');
 
-  grunt.registerTask('default', ['copy', 'concat', 'uglify', 'cssmin', 'clean', 'compile-handlebars']);
+  grunt.registerTask('default', ['clean:dist', 'copy', 'concat', 'uglify', 'cssmin', 'clean:combined-files', 'compile-handlebars']);
+  grunt.registerTask('deploy', ['default', 'ssh_deploy:production']);
 };
