@@ -2,20 +2,20 @@
   "name": "clifton-io-website",
   "version": "1.0.0",
   "description": "The HTML / resources for the https://clifton.io landing page",
-  "main": "index.html",
+  "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/clifton-io/website.git"
+    "url": "git+https://github.com/clifton-io/clifton.io.git"
   },
   "author": "Brian Clifton",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/clifton-io/website/issues"
+    "url": "https://github.com/clifton-io/clifton.io/issues"
   },
-  "homepage": "https://github.com/clifton-io/website#readme",
+  "homepage": "https://github.com/clifton-io/clifton.io#readme",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-compile-handlebars": "^2.0.1",

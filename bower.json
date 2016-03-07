@@ -1,12 +1,12 @@
 {
   "name": "clifton-io-website",
   "description": "The HTML / resources for the https://clifton.io landing page",
-  "main": "index.html",
+  "main": "Gruntfile.js",
   "authors": [
     "Brian Clifton"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/clifton-io/website",
+  "homepage": "https://github.com/clifton-io/clifton.io",
   "moduleType": [],
   "ignore": [
     "**/.*",
