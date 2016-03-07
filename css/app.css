@@ -27,6 +27,7 @@ body {
 
 div ul.nav.navbar-nav a { text-transform: capitalize; }
 a.navbar-brand { text-transform: uppercase; }
+nav#header { margin: 0px; }
 
 div#footer-top { background-color: #4f4f4f; text-align: left; min-height: 241px; }
 div#footer-bottom { background-color: #6d6d6d; text-align: center; height: 39px; }
@@ -49,7 +50,8 @@ footer h4 { color: #fff; text-transform: capitalize; padding-bottom: 5px; border
 .twitter { background-position: -140px 0px; width: 65px; margin-left: 0px; }
 .twitter:hover { background-position: -140px -64px; }
 
-.portrait { background-position: -205px 0px; width: 128px; height: 128px; margin: 0px; border: solid 1px #6d6d6d; }
+.portrait-jumbo { text-align: center; background-color: #000; padding: 0px; border-bottom: 5px solid #337ab7; color: #fff; }
+.portrait { background-image: url(../i/2016-03-06-sprite.png); background-position: 0px -128px; width: 322px; height: 322px; margin: 0px; border: 0px; }
 
 .loading {
   display: inline-block;
