@@ -6,7 +6,7 @@ module.exports = function(grunt) {
         files: [
           { expand: true, src: ['i/**'], dest: 'dist/' },
           { expand: true, src: ['robots.txt'], dest: 'dist/' },
-          { expand: true, src: ['.htaccess'], dest: 'dist/' }
+          { expand: true, src: ['htaccess'], dest: 'dist/' }
         ]
       }
     },
@@ -68,11 +68,12 @@ module.exports = function(grunt) {
       },
       production: {
         options: {
-            host: '<%= secret.production.host %>',
-            username: '<%= secret.production.username %>',
-            password: '<%= secret.production.password %>',
-            port: '<%= secret.production.port %>',
-            releases_to_keep: '10'
+          host: '<%= secret.production.host %>',
+          username: '<%= secret.production.username %>',
+          password: '<%= secret.production.password %>',
+          port: '<%= secret.production.port %>',
+          releases_to_keep: '10',
+          after_deploy: 'cd /home/<%= secret.production.username %>/clifton.io && mv htaccess .htaccess'
         }
       }
     }
