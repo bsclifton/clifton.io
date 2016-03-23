@@ -7,6 +7,7 @@ module.exports = function(grunt) {
           { expand: true, src: ['i/**'], dest: 'dist/' },
           { expand: true, src: ['robots.txt'], dest: 'dist/' },
           { expand: true, src: ['htaccess'], dest: 'dist/' },
+          { expand: true, flatten: true, src: ['favicon/favicon.ico'], dest: 'dist/' },
           { expand: true, flatten: true, src: ['bower_components/bootstrap/dist/fonts/*'], dest: 'dist/fonts/' }
         ]
       }
