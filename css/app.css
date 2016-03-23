@@ -14,7 +14,7 @@ body {
   padding: 0;
   height: 100%;
 }
-#wrap {
+#content-wrapper {
   min-height: 100%;
   height: auto;
   margin: 0 auto -280px; /* Negative indent footer by its height */

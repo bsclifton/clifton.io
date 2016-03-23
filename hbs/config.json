@@ -1,11 +1,21 @@
 {
-  "title": "Brian Clifton",
+  "title": {
+    "index": "Brian Clifton",
+    "learn": ""
+  },
   "meta-author": "Brian Clifton",
-  "meta-description": "Brian Clifton is an American computer programmer and businessman living in Chandler, Arizona.",
+  "meta-description": {
+    "index": "Brian Clifton is an American computer programmer and businessman living in Chandler, Arizona.",
+    "learn": ""
+  },
   "meta-keywords": "Programming, Web Development, Consulting, Training, Hosting, C++, C#, ASP.NET, Web API, HTML, CSS, JavaScript, Ruby, Rails, MySQL, SQL Server, Databases",
-  "my-twitter-url": "https://twitter.com/_brianclifton",
-  "my-github-url": "https://github.com/bsclifton",
-  "my-blog-url": "https://blog.clifton.io/",
-  "my-linkedin-url": "https://www.linkedin.com/in/bsclifton",
+  "links": {
+    "twitter": "https://twitter.com/_brianclifton",
+    "github": "https://github.com/bsclifton",
+    "linkedin": "https://www.linkedin.com/in/bsclifton",
+    "index": "https://clifton.io/",
+    "blog": "https://blog.clifton.io/",
+    "learn": "https://clifton.io/learn/"
+  },
   "ga-tracking-id": "UA-27108697-5"
 }
