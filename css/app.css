@@ -76,3 +76,31 @@ section#body .container > div {
 #blog-entries p a {
   color: #ccc;
 }
+
+/* formatting the titles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif !important;
+}
+h2.h1 {
+  font-size: 30px;
+  margin-top: 5px;
+}
+h4.widgettitle {
+  font-weight: bold;
+}
+ul.meta a.date {
+  font-weight: bold;
+}
+
+/* paragraph formatting */
+p {
+  margin: 0 0 15px 0;
+}
+
+/* comments */
+.commentlist .comment .comment-body .comment-author {
+  color: #000;
+}
+.commentlist .comment .comment-body .comment-author a {
+  color: #337ab7 !important;
+}

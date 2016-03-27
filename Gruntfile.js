@@ -49,17 +49,16 @@ module.exports = function(grunt) {
       options: {
         local_path: 'dist',
         current_symlink: 'clifton.io',
-        deploy_path: '/home/<%= secret.production.username %>',
+        deploy_path: '/srv',
         release_root: 'clifton.io-releases'
       },
       production: {
         options: {
           host: '<%= secret.production.host %>',
           username: '<%= secret.production.username %>',
-          password: '<%= secret.production.password %>',
+          privateKey: require('fs').readFileSync('C:/cygwin64/home/Brian/.ssh/id_rsa'),
           port: '<%= secret.production.port %>',
-          releases_to_keep: '10',
-          after_deploy: 'cd /home/<%= secret.production.username %>/clifton.io && mv htaccess .htaccess'
+          releases_to_keep: '10'
         }
       }
     }
