@@ -85,7 +85,7 @@ h2.h1 {
   font-size: 30px;
   margin-top: 5px;
 }
-h4.widgettitle {
+h4 {
   font-weight: bold;
 }
 ul.meta a.date {
@@ -103,4 +103,12 @@ p {
 }
 .commentlist .comment .comment-body .comment-author a {
   color: #337ab7 !important;
+}
+
+/* /learn/ page */
+table.table {
+  font-size: 11px;
+}
+pre {
+  display: inline-block;
 }
