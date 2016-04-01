@@ -112,7 +112,7 @@
           I'd also work with chemicals used for coloring ABS plastic. If I wasn't careful and spilled the chemicals on myself, they were so strong that my skin would be stained for several days.
           I was doing all of this for $8 - 12 / hour back in 1998, 1999, and 2000. This works out to be roughly $16k - $25k a year.
         </p>
-        <img src="/i/learn-factory.png" alt="Me in my teenage years; a factory worker in Tennessee"></img>
+        <div class="learn-factory" title="Me in my teenage years; a factory worker in Tennessee"></div>
         <p>
           Even though I was in good physical shape and was able to do the job (once I got settled in), it was still physically demanding.
           What's even scarier was that I worked with a few folks that were in their mid or late 50's. These people were doing the same physical job that I (a teenager)
@@ -172,7 +172,7 @@
         </p>
 
         <h4>My experience: Helping someone with a game</h4>
-        <img src="/i/learn-dw.png" alt="A screenshot of the game, Dragon Warrior"></img>
+        <div class="learn-dw" title="A screenshot of the game, Dragon Warrior"></div>
         <p>
           Here's an example- <a href="https://github.com/Threllous/DragonWarriorJS">DragonWarriorJS</a>. This is an old Nintendo game I really enjoyed as a kid and this person was re-making it in the web browser.
           I found this project on GitHub and just started contributing. I was able to add a lot to the game and I submitted my changes to the original author for Christmas in 2014 (which took him by surprise!).
@@ -240,39 +240,22 @@
       </div>
     </section>
   </div>
-  <footer id="footer-large">
-    <div id="footer-top">
-      <div class="container">
-        <div class="row" id="footer-top-content">
-          <div id="blog-entries" class="col-md-4">
-            <h4>blog</h4>
-            <p class="loading" style="display:none;"></p>
-            <p class="no-entries" style="display:none;">No entries yet</p>
-            <p class="failure" style="display:none;">Error loading blog entries</p>
-          </div>
-          <div class="col-md-4">
-          </div>
-          <div class="col-md-4">
-            <h4>follow me</h4>
-            <div>
-              <a title="Twitter" class="icons twitter" href="{{links.twitter}}"></a>
-              <a title="GitHub" class="icons github" href="{{links.github}}"></a>
-              <a title="LinkedIn" class="icons linked-in" href="{{links.linkedin}}"></a>
-            </div>
-          </div>
-        </div>
+
+  <footer>
+    <div class="container">
+      <div class="social col-md-4">
+        <a class="fa fa-twitter" href="{{links.twitter}}" title="Twitter" target="_blank"></a>
+        <a class="fa fa-github" href="{{links.github}}" title="GitHub" target="_blank"></a>
+        <a class="fa fa-linkedin-square" href="{{links.linkedin}}" title="LinkedIn" target="_blank"></a>
       </div>
-    </div>
-    <div id="footer-bottom">
-      <div class="container">
-        <div class="row" id="footer-bottom-content">
-          &copy; Copyright 2016, {{meta-author}}. All rights reserved.
-        </div>
+
+      <div class="copyright col-md-8">
+        &copy; Copyright 2016, {{meta-author}}. All rights reserved.
       </div>
     </div>
   </footer>
-  <script src="/js/clifton-io-website.min.js"></script>
-  <script>
+  <script type="text/javascript" src="/js/clifton-io-website.min.js"></script>
+  <script type="text/javascript">
     registerAnalytics('{{ga-tracking-id}}');
     getRecentBlogPosts();
   </script>

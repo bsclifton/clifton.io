@@ -9,12 +9,12 @@ function registerAnalytics(trackingId) {
 
 function getRecentBlogPosts() {
   $('#blog-entries p').hide();
-  $('#blog-entries .loading').show();
+  $('#blog-entries .loading-container').show();
   $.ajax({
     type: 'GET',
     accepts: 'application/json',
     dataType: 'json',
-    url: '//blog.clifton.io/api/get_recent_posts/?count=5'
+    url: 'https://blog.clifton.io/api/get_recent_posts/?count=5'
   }).done(function (data, textStatus, response) {
     var postCount = 0, posts, post, i;
     if (data !== null || typeof data !== 'undefined') {
@@ -33,6 +33,6 @@ function getRecentBlogPosts() {
   }).fail(function (response, textStatus, errorThrown) {
     $('#blog-entries .failure').show();
   }).always(function (){
-    $('#blog-entries .loading').hide();
+    $('#blog-entries .loading-container').hide();
   });
 }

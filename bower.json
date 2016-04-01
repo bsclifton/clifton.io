@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.6",
-    "handlebars": "^4.0.5"
+    "handlebars": "^4.0.5",
+    "font-awesome": "fontawesome#^4.5.0"
   }
 }

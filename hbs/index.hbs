@@ -5,14 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{{title.index}}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/clifton-io-website.min.css">
   <meta name="author" content="{{meta-author}}">
   <meta name="description" content="{{meta-description.index}}">
   <meta name="keywords" content="{{meta-keywords}}">
   <link rel="canonical" href="{{links.index}}">
-  <link rel="stylesheet" href="/css/clifton-io-website.min.css">
 </head>
 <body>
-  <div id="content-wrapper">
+  <div id="content-wrapper" class="index">
     <header>
       <nav id="header" class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="container">
@@ -33,12 +33,14 @@
         </div>
       </nav>
     </header>
-    <section id="jumbo" class="jumbotron portrait-jumbo">
+
+    <section id="portrait-jumbo">
       <div class="icons portrait"></div>
       <h1>Hi, I'm Brian :)</h1>
     </section>
-    <section id="body">
-      <div class="jumbotron container">
+
+    <section id="intro">
+      <div class="container">
         <div>
           <p>
             My goal is to make a difference in people's lives.
@@ -54,40 +56,32 @@
         </div>
       </div>
     </section>
-  </div>
-  <footer id="footer-large">
-    <div id="footer-top">
-      <div class="container">
-        <div class="row" id="footer-top-content">
-          <div id="blog-entries" class="col-md-4">
-            <h4>blog</h4>
-            <p class="loading" style="display:none;"></p>
-            <p class="no-entries" style="display:none;">No entries yet</p>
-            <p class="failure" style="display:none;">Error loading blog entries</p>
-          </div>
-          <div class="col-md-4">
-          </div>
-          <div class="col-md-4">
-            <h4>follow me</h4>
-            <div>
-              <a title="Twitter" class="icons twitter" href="{{links.twitter}}"></a>
-              <a title="GitHub" class="icons github" href="{{links.github}}"></a>
-              <a title="LinkedIn" class="icons linked-in" href="{{links.linkedin}}"></a>
-            </div>
-          </div>
-        </div>
+
+    <section id="main">
+      <div id="blog-entries">
+        <h4><i class="fa fa-newspaper-o" style="margin-right:10px;"></i>Recent blog entries</h4>
+        <div class="loading-container" style="display:none;"><div class="loading"></div></div>
+        <p class="no-entries" style="display:none;">No entries yet</p>
+        <p class="failure" style="display:none;">Error loading blog entries</p>
       </div>
-    </div>
-    <div id="footer-bottom">
-      <div class="container">
-        <div class="row" id="footer-bottom-content">
-          &copy; Copyright 2016, {{meta-author}}. All rights reserved.
-        </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="social col-md-4">
+        <a class="fa fa-twitter" href="{{links.twitter}}" title="Twitter" target="_blank"></a>
+        <a class="fa fa-github" href="{{links.github}}" title="GitHub" target="_blank"></a>
+        <a class="fa fa-linkedin-square" href="{{links.linkedin}}" title="LinkedIn" target="_blank"></a>
+      </div>
+
+      <div class="copyright col-md-8">
+        &copy; Copyright 2016, {{meta-author}}. All rights reserved.
       </div>
     </div>
   </footer>
-  <script src="/js/clifton-io-website.min.js"></script>
-  <script>
+  <script type="text/javascript" src="/js/clifton-io-website.min.js"></script>
+  <script type="text/javascript">
     registerAnalytics('{{ga-tracking-id}}');
     getRecentBlogPosts();
   </script>

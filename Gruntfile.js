@@ -8,7 +8,8 @@ module.exports = function(grunt) {
           { expand: true, src: ['robots.txt'], dest: 'dist/' },
           { expand: true, src: ['htaccess'], dest: 'dist/' },
           { expand: true, flatten: true, src: ['favicon/favicon.ico'], dest: 'dist/' },
-          { expand: true, flatten: true, src: ['bower_components/bootstrap/dist/fonts/*'], dest: 'dist/fonts/' }
+          { expand: true, flatten: true, src: ['bower_components/bootstrap/dist/fonts/*'], dest: 'dist/fonts/' },
+          { expand: true, flatten: true, src: ['bower_components/font-awesome/fonts/*'], dest: 'dist/fonts/' }
         ]
       }
     },
@@ -29,6 +30,7 @@ module.exports = function(grunt) {
         files: {
           'dist/css/<%= pkg.name %>.min.css': [
             'bower_components/bootstrap/dist/css/bootstrap.min.css',
+            'bower_components/font-awesome/css/font-awesome.min.css',
             'css/app.css'
           ]
         }
