@@ -41,7 +41,8 @@ module.exports = function(grunt) {
       target:{
         files: [
           { src: 'hbs/index.hbs', dest: 'dist/index.html' },
-          { src: 'hbs/learn.hbs', dest: 'dist/learn/index.html' }
+          { src: 'hbs/learn.hbs', dest: 'dist/learn/index.html' },
+          { src: 'hbs/about.hbs', dest: 'dist/about/index.html' }
         ],
         templateData: 'hbs/config.json'
       }

@@ -27,8 +27,9 @@
           </div>
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="{{links.learn}}">learn</a></li>
+              <li><a href="{{links.about}}">about</a></li>
               <li><a href="{{links.blog}}">blog</a></li>
+              <li class="active"><a href="{{links.learn}}">learn</a></li>
             </ul>
           </div>
         </div>
@@ -57,7 +58,7 @@
           activity together.
         </p>
         <p>
-          One of my favorite things about working with really smart people is that you always will be learning new things. Learning doesn't stop in school- it's a life long process. I know I'm pretty good
+          One of my favorite things about working with really smart people is that you always will be learning new things. Learning doesn't stop in school- it's a lifelong process. I know I'm pretty good
           at what I do, but I regularly meet people who are better than me in different areas and this is a great chance for me to learn. I've learned a lot about technologies I haven't used before and
           gotten mentoring from people that are industry experts. I've also been lucky enough to share what I know and see people grow and become better.
         </p>
@@ -112,7 +113,7 @@
           I'd also work with chemicals used for coloring ABS plastic. If I wasn't careful and spilled the chemicals on myself, they were so strong that my skin would be stained for several days.
           I was doing all of this for $8 - 12 / hour back in 1998, 1999, and 2000. This works out to be roughly $16k - $25k a year.
         </p>
-        <div class="learn-factory" title="Me in my teenage years; a factory worker in Tennessee"></div>
+        <div class="learn-factory img-responsive" title="Me in my teenage years; a factory worker in Tennessee"></div>
         <p>
           Even though I was in good physical shape and was able to do the job (once I got settled in), it was still physically demanding.
           What's even scarier was that I worked with a few folks that were in their mid or late 50's. These people were doing the same physical job that I (a teenager)
@@ -123,7 +124,7 @@
         <h3>Solve problems that matter to you</h3>
         <p>
           You have a chance to make a difference in the world. People rely on technologies and services like email, Skype, and Facebook to keep in touch with their friends and family.
-          Software is an important part of how people do business in this day and age- whether it's accounting software like Turbotax.
+          Software is an important part of how people do business in this day and age- whether it's accounting software like TurboTax, apps for your iPhone or Android, like Uber.
           You have a chance to not only make a difference and have a positive impact to a large number of people's lives, but you also have an opportunity to be the
           one coming up with the new ideas and technologies that will take our society to the next level.
         </p>
@@ -138,10 +139,13 @@
         <h3>Start off with web development</h3>
         <p>
           Web development is a great way to start because it's <strong>really easy</strong> to get started. Any computer you use is going to have a web browser (Safari, Chrome, Edge/IE, Firefox, etc).
-          To get started, you just open a text editor and start typing. Here's the bare-bones skeleton for any web page.
+          To get started, you just open a text editor and start typing. You can use a very basic text editor, like Notepad... or you can use a more advanced one, like Sublime Text, Visual Studio Code, or vim.
+        </p>
+        <p>
+          Here's the bare-bones skeleton for any web page.
 <pre>&lt;html&gt;
   &lt;head&gt;
-    &lt;title&gt;Page title goes here&lt;/title&gt;
+    &lt;title&gt;Title goes here&lt;/title&gt;
   &lt;/head&gt;
   &lt;body&gt;
     Content goes here
@@ -151,12 +155,14 @@
 
         <h4>Make your pages</h4>
         <p>
-          If you get stuck, the great thing you can do? Right click > View Source. You can view the source for any web page to get ideas.
+          If you get stuck, the great thing you can do? Right click > Inspect (or View Source). You can view the HTML, CSS, and JavaScript for any web page to get ideas.
         </p>
 
         <h4>Get hosting - share your site!</h4>
         <p>
           Hosting is where your web pages will be stored. Basically, it's just someone else's computer which has internet access.
+          I'll have more info on this soon... but if you're wanting to get something online so you can learn more and you don't want
+          to buy a hosting account, please contact me and I'll help get you set up with one.
         </p>
 
         <h4>Domain name</h4>
@@ -172,10 +178,10 @@
         </p>
 
         <h4>My experience: Helping someone with a game</h4>
-        <div class="learn-dw" title="A screenshot of the game, Dragon Warrior"></div>
+        <div class="learn-dw img-responsive" title="A screenshot of the game, Dragon Warrior"></div>
         <p>
-          Here's an example- <a href="https://github.com/Threllous/DragonWarriorJS">DragonWarriorJS</a>. This is an old Nintendo game I really enjoyed as a kid and this person was re-making it in the web browser.
-          I found this project on GitHub and just started contributing. I was able to add a lot to the game and I submitted my changes to the original author for Christmas in 2014 (which took him by surprise!).
+          Here's an example- <a href="https://github.com/Threllous/DragonWarriorJS">DragonWarriorJS</a>. Dragon Warrior was an old Nintendo game I really enjoyed as a kid and this person was re-making it for the web browser.
+          I found this project on GitHub, found things that were missing, and just started contributing. I was able to add a lot to the game and I submitted my changes to the original author for Christmas in 2014 (which took him by surprise!).
           <a href="https://dw.clifton.io/" target="_blank">Here's a link to the game</a> if you wanted to check it out.
         </p>
 
@@ -257,7 +263,6 @@
   <script type="text/javascript" src="/js/clifton-io-website.min.js"></script>
   <script type="text/javascript">
     registerAnalytics('{{ga-tracking-id}}');
-    getRecentBlogPosts();
   </script>
 </body>
 </html>

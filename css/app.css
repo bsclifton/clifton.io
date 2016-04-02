@@ -155,9 +155,6 @@ div#blog-entries p.failure {
 table.table {
   font-size: 11px;
 }
-pre {
-  display: inline-block;
-}
 
 .learn-factory {
   display: inline-block;
