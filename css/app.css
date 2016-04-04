@@ -20,7 +20,7 @@ body {
   margin: 0 auto -80px; /* Negative indent footer by its height */
   padding: 0 0 80px; /* Pad bottom by footer height */
 }
-footer {
+body > footer {
   width: 100%;
   min-height: 80px;
   height: 80px;
@@ -28,30 +28,30 @@ footer {
   text-align: left;
   border-top: 5px solid #e7e7e7;
 }
-footer .container {
+body > footer .container {
   background-color: #4f4f4f;
 }
-footer .copyright {
+body > footer .copyright {
   margin-top: 29px;
   margin-bottom: 10px;
   color: #ccc;
   text-align: center;
 }
-footer .social {
+body > footer .social {
   margin-top: 7px;
   font-size: 48px;
   text-align: center;
 }
-footer .social a {
+body > footer .social a {
   margin-right: 15px;
 }
-footer .social a:hover {
+body > footer .social a:hover {
   text-decoration: none;
 }
 
 div ul.nav.navbar-nav a { text-transform: capitalize; }
 a.navbar-brand { text-transform: uppercase; }
-nav#header { margin: 0px; border-width: 0 0 5px; }
+div#content-wrapper > header > nav { margin: 0px; border-width: 0 0 5px; }
 
 /* formatting for headers / titles / paragraphs */
 h1, h2, h3, h4, h5, h6 {
@@ -143,14 +143,6 @@ div#blog-entries p.failure {
   margin: 10px;
 }
 
-/* blog comments */
-.commentlist .comment .comment-body .comment-author {
-  color: #000;
-}
-.commentlist .comment .comment-body .comment-author a {
-  color: #337ab7 !important;
-}
-
 /* /learn/ page */
 table.table {
   font-size: 11px;
@@ -173,4 +165,18 @@ table.table {
   height: 193px;
   margin: 0px;
   border: 0px;
+}
+
+/* /about/ page */
+.intentionally-blank {
+  display: none;
+}
+
+i.loading-button {
+  display: inline-block;
+  background-image: url(/i/loader-button-16x16.gif);
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 3px;
 }

@@ -29,7 +29,6 @@
             <ul class="nav navbar-nav navbar-right">
               <li class="active"><a href="{{links.about}}">about</a></li>
               <li><a href="{{links.blog}}">blog</a></li>
-              <li><a href="{{links.learn}}">learn</a></li>
             </ul>
           </div>
         </div>
@@ -39,29 +38,51 @@
       <div class="container">
         <h1>About Me</h1>
         <p>
-          TODO: ...
+          My name is Brian and I'm a developer at GoDaddy in the hosting department. I joined as a C++ engineer back in 2008 and I’ve helped create an automation layer around our dedicated hosting, VPS, and shared hosting (cPanel and Plesk) products. I’ve also done a fairly large amount of UI development, working on our Hosting Control Center.
+        </p>
+        <p>
+          Before GoDaddy, I was in the manufacturing (TMG) organization at Intel (2005 – 2008). I worked on middleware products (COM/DCOM, guaranteed delivery services, etc) used at the D1D factory in Hillsboro, Oregon. D1D is/was the flagship factory where the ground-breaking process engineering took place for processors. Products I worked on were used in the 1264 (65nm), 1266 (45nm) and 1268 (32nm) processes.
+        </p>
+        <p>
+          Before Intel and GoDaddy, I also worked for several small businesses in the payment processing industry.
+        </p>
+        <p>
+          Some friends and I formed Morgopolis Studios, LLC in 2012 and released our first video game, <a href="http://bit.ly/1ou4jUa">Magicians &amp; Looters</a>, for the Xbox 360 Indie Games marketplace. It’s also available <a href="http://bit.ly/234nDdJ">for PC on Steam</a>.
+        </p>
+        <p>
+          I’ve been writing software since the early 1990s (when I was 10 or 11 years old) and I still love it. I attended and got a bachelors from UAT (University of Advancing Technology) here in the valley (Tempe, AZ).
         </p>
       </div>
       <div class="container">
         <h2>Contact Me</h2>
         <p>
-          Do you have a question or comment? Let me know what you think. Be sure to include your email address if you want a response. I'll try to respond as soon as possible.
+          Do you have a question or comment? Let me know what you think. Be sure to include your email address if you want a response.
         </p>
-        <form>
+        <div id="email-form">
           <div class="form-group">
-            <label for="formName">Name</label>
-            <input type="text" class="form-control" id="formName" placeholder="Your name">
+            <label for="email-name">Name</label>
+            <input id="email-name" type="text" class="form-control" placeholder="Your name">
           </div>
           <div class="form-group">
-            <label for="formEmail">Email address</label>
-            <input type="email" class="form-control" id="formEmail" placeholder="Your email address">
+            <label for="email-address">Email address</label>
+            <input id="email-address" type="email" class="form-control" placeholder="Your email address">
+          </div>
+          <div class="form-group intentionally-blank">
+            <label for="email-url">Url</label>
+            <input id="email-url" type="text" class="form-control" placeholder="Your email address">
           </div>
           <div class="form-group">
-            <label for="formMessage">Message</label>
-            <textarea class="form-control" rows="5" id="formMessage"></textarea>
+            <label for="email-message">Message</label>
+            <textarea id="email-message" class="form-control" rows="5" placeholder="Your message"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary" onclick="alert('Sorry, this isn\'t hooked into any code yet :( Please email me directly at brian@clifton.me');">Submit</button>
-        </form>
+          <button id="email-submit" type="submit" class="btn btn-primary" onclick="submitEmailForm();">
+            Submit <i class="loading-button" style="display:none;"></i>
+          </button>
+        </div>
+        <div id="email-sent" style="display:none;">
+          <h2>Your message has been sent</h2>
+          <p>Thanks for the feedback! If you included your email and are expecting a response, I should be able to reply within 24 hours (no promises though).</p>
+        </div>
       </div>
     </section>
   </div>

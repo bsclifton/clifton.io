@@ -42,9 +42,11 @@ module.exports = function(grunt) {
         files: [
           { src: 'hbs/index.hbs', dest: 'dist/index.html' },
           { src: 'hbs/learn.hbs', dest: 'dist/learn/index.html' },
-          { src: 'hbs/about.hbs', dest: 'dist/about/index.html' }
+          { src: 'hbs/about.hbs', dest: 'dist/about/index.html' },
+          { src: 'hbs/email.php.hbs', dest: 'dist/about/email.php' }
         ],
-        templateData: 'hbs/config.json'
+        templateData: 'hbs/config.json',
+        globals: ['secret.json']
       }
     },
     secret: grunt.file.readJSON('secret.json'),

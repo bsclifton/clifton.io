@@ -32,7 +32,31 @@ function getRecentBlogPosts() {
     }
   }).fail(function (response, textStatus, errorThrown) {
     $('#blog-entries .failure').show();
-  }).always(function (){
+  }).always(function () {
     $('#blog-entries .loading-container').hide();
+  });
+}
+
+function submitEmailForm() {
+  var name = $('#email-name').val(),
+      email = $('#email-address').val(),
+      url = $('#email-url').val(),
+      message = $('#email-message').val();
+
+  $("[id^=email-]").prop('disabled', true);
+  $("i.loading-button").show();
+
+  $.ajax({
+    type: 'POST',
+    url: 'https://clifton.io/about/email.php',
+    data: { name: name, email: email, url: url, message: message }
+  }).done(function (data, textStatus, response) {
+    $('#email-form').hide();
+    $('#email-sent').show();
+  }).fail(function (response, textStatus, errorThrown) {
+    //TODO: ...
+  }).always(function () {
+    $("[id^=email-]").prop('disabled', false);
+    $("i.loading-button").hide();
   });
 }

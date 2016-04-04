@@ -1,0 +1,26 @@
+<?php
+
+if ((!isset($_POST['name']) || !isset($_POST['email'])) && !isset($_POST['message'])) {
+  header("Status: 400");
+  exit;
+}
+
+if (isset($_POST['url']) && $_POST['url'] == '' && $_POST["message"] != '') {
+  $name = filter_var($_POST['name'], FILTER_SANITIZE_SPECIAL_CHARS);
+  $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+  $message = filter_var($_POST['message'], FILTER_SANITIZE_SPECIAL_CHARS);
+
+  $email_message = "Dear {{meta-author}}, \n\n" .
+  "Someone named \"$name\" just wrote a message for you on {{website-name}}. " .
+  "You can write them back at $email. Here's their message...\n\n" .
+  "$message";
+
+  $email_to = "{{email-to}}";
+  $email_subject = "New message submitted on {{website-name}}";
+  $headers = "From: {{email-from}}\r\nX-Mailer: PHP/" . phpversion();
+
+  @mail($email_to, $email_subject, $email_message, $headers);
+}
+
+header("Status: 200");
+?>

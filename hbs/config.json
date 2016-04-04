@@ -11,6 +11,7 @@
     "about": "Some info about myself and also a way to contact me if you have any questions or comments."
   },
   "meta-keywords": "Programming, Web Development, Consulting, Training, Hosting, C++, C#, ASP.NET, Web API, HTML, CSS, JavaScript, Ruby, Rails, MySQL, SQL Server, Databases",
+  "website-name": "Clifton.io",
   "links": {
     "twitter": "https://twitter.com/_brianclifton",
     "github": "https://github.com/bsclifton",
