@@ -20,6 +20,9 @@ body {
   margin: 0 auto -80px; /* Negative indent footer by its height */
   padding: 0 0 80px; /* Pad bottom by footer height */
 }
+#content-wrapper section:last-of-type {
+  margin-bottom: 30px;
+}
 body > footer {
   width: 100%;
   min-height: 80px;

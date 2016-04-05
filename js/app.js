@@ -43,8 +43,8 @@ function submitEmailForm() {
       url = $('#email-url').val(),
       message = $('#email-message').val();
 
-  $("[id^=email-]").prop('disabled', true);
-  $("i.loading-button").show();
+  $('[id^=email-]').prop('disabled', true);
+  $('i.loading-button').show();
 
   $.ajax({
     type: 'POST',
@@ -56,7 +56,15 @@ function submitEmailForm() {
   }).fail(function (response, textStatus, errorThrown) {
     //TODO: ...
   }).always(function () {
-    $("[id^=email-]").prop('disabled', false);
-    $("i.loading-button").hide();
+    $('[id^=email-]').prop('disabled', false);
+    $('i.loading-button').hide();
+  });
+}
+
+function setupEmailForm() {
+  $('#email-submit').prop('disabled', true);
+
+  $('#email-message').keyup(function () {
+    $('#email-submit').prop('disabled', $('#email-message').val().trim().length === 0);
   });
 }
