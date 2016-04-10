@@ -54,7 +54,7 @@ function submitEmailForm() {
     $('#email-form').hide();
     $('#email-sent').show();
   }).fail(function (response, textStatus, errorThrown) {
-    //TODO: ...
+    alert('There was an error submitting your message. Please check the message and try again.');
   }).always(function () {
     $('[id^=email-]').prop('disabled', false);
     $('i.loading-button').hide();

@@ -6,26 +6,26 @@ if (!isset($_POST['name']) || !isset($_POST['email']) || !isset($_POST['url']) |
 }
 
 if ($_POST['url'] == '') {
-  $name = filter_var($_POST['name'], FILTER_SANITIZE_SPECIAL_CHARS);
-  if (strlen(trim($name)) == 0) {
-    $name = "An anonymous person";
+  $name = filter_var(trim($_POST['name']), FILTER_SANITIZE_SPECIAL_CHARS);
+  if (strlen($name) == 0) {
+    $formatted_name = "An anonymous person";
   } else {
-    $name = "Someone named \"$name\"";
+    $formatted_name = "Someone named \"$name\"";
   }
 
-  $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-  if (strlen(trim($email)) == 0) {
-    $email = "They didn't provide an email";
+  $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
+  if (strlen($email) == 0) {
+    $formatted_email = "They didn't provide an email";
   } else {
-    $email = "You can write them back at $email";
+    $formatted_email = "You can write them back at ${email}";
   }
 
   $message = filter_var($_POST['message'], FILTER_SANITIZE_SPECIAL_CHARS);
 
   $email_message = "Dear {{meta-author}}, \n\n" .
-  "$name just wrote a message for you on {{website-name}}. " .
-  "$email. Here's their message...\n\n" .
-  "$message";
+    "${formatted_name} just wrote a message for you on {{website-name}}. " .
+    "${formatted_email}. Here's their message...\n\n" .
+    "${message}";
 
   $email_to = "{{email-to}}";
   $email_subject = "New message submitted on {{website-name}}";
