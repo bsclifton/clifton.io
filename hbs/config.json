@@ -1,13 +1,14 @@
 {
   "title": {
     "index": "Brian Clifton",
-    "learn": "Learn Programming",
-    "about": "About Me"
+    "learn": "Learn programming",
+    "about": "About me",
+    "contact": "Contact me"
   },
   "meta-author": "Brian Clifton",
   "meta-description": {
     "index": "Brian Clifton is an American computer programmer and businessman living in Chandler, Arizona.",
-    "learn": "Learn about programming! This post has a lot of great info to get you started.",
+    "learn": "Learn about programming! This post has a lot of great info to help get you started.",
     "about": "Some info about myself and also a way to contact me if you have any questions or comments."
   },
   "meta-keywords": "Programming, Web Development, Consulting, Training, Hosting, C++, C#, ASP.NET, Web API, HTML, CSS, JavaScript, Ruby, Rails, MySQL, SQL Server, Databases",
