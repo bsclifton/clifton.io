@@ -18,7 +18,6 @@ module.exports = function(grunt) {
         files: {
           'dist/js/<%= pkg.name %>.min.js': [
             'bower_components/jquery/dist/jquery.min.js',
-            'bower_components/handlebars/handlebars.min.js',
             'bower_components/bootstrap/dist/js/bootstrap.min.js',
             'bower_components/autotrack/autotrack.js',
             'js/app.js'
@@ -47,7 +46,8 @@ module.exports = function(grunt) {
           { src: 'hbs/email.php.hbs', dest: 'dist/about/email.php' }
         ],
         templateData: 'hbs/config.json',
-        globals: ['secret.json']
+        globals: ['secret.json'],
+        partials: ['hbs/partials/*.hbs']
       }
     },
     secret: grunt.file.readJSON('secret.json'),

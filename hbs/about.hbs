@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>{{title.about}}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/css/clifton-io-website.min.css">
-  <meta name="author" content="{{meta-author}}">
-  <meta name="description" content="{{meta-description.about}}">
-  <meta name="keywords" content="{{meta-keywords}}">
-  <link rel="canonical" href="{{links.about}}">
-</head>
+{{> head head-title=title.about head-description=meta-description.about head-link=links.about }}
 <body>
   <div id="content-wrapper">
     <header>
@@ -87,23 +77,6 @@
     </section>
   </div>
 
-  <footer>
-    <div class="container">
-      <div class="social col-md-4">
-        <a class="fa fa-twitter" href="{{links.twitter}}" title="Twitter" target="_blank"></a>
-        <a class="fa fa-github" href="{{links.github}}" title="GitHub" target="_blank"></a>
-        <a class="fa fa-linkedin-square" href="{{links.linkedin}}" title="LinkedIn" target="_blank"></a>
-      </div>
-
-      <div class="copyright col-md-8">
-        &copy; Copyright 2016, {{meta-author}}. All rights reserved.
-      </div>
-    </div>
-  </footer>
-  <script type="text/javascript" src="/js/clifton-io-website.min.js"></script>
-  <script type="text/javascript">
-    registerAnalytics('{{ga-tracking-id}}');
-    setupEmailForm();
-  </script>
+  {{> footer about=true }}
 </body>
 </html>
