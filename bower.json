@@ -18,6 +18,7 @@
   "dependencies": {
     "bootstrap": "^3.3.6",
     "handlebars": "^4.0.5",
-    "font-awesome": "fontawesome#^4.5.0"
+    "font-awesome": "fontawesome#^4.5.0",
+    "autotrack": "^0.6.4"
   }
 }
