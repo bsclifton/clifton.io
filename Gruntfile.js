@@ -62,7 +62,7 @@ module.exports = function(grunt) {
         options: {
           host: '<%= secret.production.host %>',
           username: '<%= secret.production.username %>',
-          privateKey: require('fs').readFileSync('C:/cygwin64/home/Brian/.ssh/id_rsa'),
+          privateKey: require('fs').readFileSync('/Users/clifton/.ssh/id_rsa'),
           port: '<%= secret.production.port %>',
           releases_to_keep: '10'
         }
