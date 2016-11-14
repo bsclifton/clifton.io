@@ -43,7 +43,8 @@ module.exports = function(grunt) {
           { src: 'hbs/index.hbs', dest: 'dist/index.html' },
           { src: 'hbs/learn.hbs', dest: 'dist/learn/index.html' },
           { src: 'hbs/about.hbs', dest: 'dist/about/index.html' },
-          { src: 'hbs/email.php.hbs', dest: 'dist/about/email.php' }
+          { src: 'hbs/email.php.hbs', dest: 'dist/about/email.php' },
+          { src: 'hbs/ref-git.hbs', dest: 'dist/reference/git/index.html' }
         ],
         templateData: 'hbs/config.json',
         globals: ['secret.json'],

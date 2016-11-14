@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+{{> head head-title=title.git head-description=meta-description.git head-link=links.git }}
+<body>
+  <div id="content-wrapper">
+    <header>
+      <nav id="header" class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand active" href="{{links.index}}" data-event-category="navigation-menu" data-event-action="home">{{meta-author}}</a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="{{links.about}}" data-event-category="navigation-menu" data-event-action="about">about</a></li>
+              <li><a href="{{links.blog}}" data-event-category="navigation-menu" data-event-action="blog">blog</a></li>
+              <li class="active"><a href="{{links.learn}}" data-event-category="navigation-menu" data-event-action="learn">learn</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section id="page-content">
+      <div class="container">
+        <h1>{{title.git}}</h1>
+
+        <h2>Remove last commit</h2>
+        <p><pre>git reset --hard HEAD^</pre></p>
+
+        <h2>Set upstream on local</h2>
+        <p><pre>git branch --set-upstream-to=upstream/foo</pre></p>
+
+        <h2>Push local over a remote with different name</h2>
+        <p><pre>git push origin local-name:remote-name</pre></p>
+
+        <h2>Search commit log</h2>
+        <p><pre>git reflog
+git log --all --grep='words here'
+git show --stat 0c741c707f9839dc8921c4dc2e2dc03681efae1e</pre>
+        </p>
+
+        <h2>Edit an old commit</h2>
+        <p>
+          <pre>git rebase -i SHA^</pre><br>
+          Specify edit; it'll kick out, make changes, git commit then and <pre>git rebase --continue</pre>
+        </p>
+
+        <h2>Detailed history for file (including renames)</h2>
+        <p><pre>git log --follow -p fileNameHere</pre></p>
+
+        <h2>Get a patch from last commit</h2>
+        <p><pre>git show HEAD > some-patch0001.patch</pre></p>
+
+        <h2>Applying a patch file</h2>
+        <p><pre>git apply patchFileName.patch</pre></p>
+
+        <h2>Rename branch</h2>
+        <p><pre>git branch -m currentname newname</pre></p>
+
+        <h2>Change upstream</h2>
+        <p><pre>git branch -u origin/master</pre></p>
+
+        <h2>Clean submodules</h2>
+        <p><pre>git submodule deinit --all -f</pre></p>
+
+        <h2>Change commit date</h2>
+        <p>
+          If you wanted to change the dates of commit <code>119f9ecf58069b265ab22f1f97d2b648faf932e0</code>, you could do so with something like this:
+          <pre>git filter-branch --env-filter \
+'if [ $GIT_COMMIT = 119f9ecf58069b265ab22f1f97d2b648faf932e0 ]
+ then
+     export GIT_AUTHOR_DATE="Fri Jan 2 21:38:53 2009 -0800"
+     export GIT_COMMITTER_DATE="Sat May 19 01:01:01 2007 -0700"
+ fi'</pre></p>
+
+        <h2>Rewrite history after rebasing, so commit date matches author date</h2>
+        <pre>git filter-branch --env-filter 'GIT_COMMITTER_DATE=$GIT_AUTHOR_DATE; export GIT_COMMITTER_DATE'</pre>
+
+        This should have worked, but didn't (when doing an interactive rebase)<br>
+        <pre>git rebase -i HEAD~100 --committer-date-is-author-date</pre>
+
+        Check with:<br>
+        <pre>git log --pretty=fuller</pre>
+
+        <h2>Completely remove a commit (will cause conflict if other commits reference it)</h2>
+        <pre>git rebase -p --onto SHA^ SHA</pre>
+
+        <h2>Delete a remote (without having it locally)</h2>
+        <pre>git push origin --delete branchName</pre>
+
+        <h2>Removing unreferenced commits (after rebasing)</h2>
+        <pre>git reflog expire --expire-unreachable=now --all
+git gc --prune=now</pre>
+
+        <code>git reflog expire --expire-unreachable=now --all</code> removes all references of unreachable commits in reflog.<br>
+        <code>git gc --prune=now</code> removes the commits themselves.
+
+        <h2>Don't use git gc --aggressive (unless you want deltas recalculated, which could be bad)</h2>
+        http://stackoverflow.com/questions/28720151/git-gc-aggressive-vs-git-repack<br>
+        Proper way to achieve the intended goal (per Linus mailing list)<br>
+        <pre>git repack -a -d --depth=250 --window=250</pre>
+
+        <h2>Creating an annotated tag</h2>
+        <pre>git tag -a v1.4 -m "my version 1.4"</pre>
+
+        <h2>Windows - getting lots of stupid file mode changes?</h2>
+        <pre>git config core.filemode false</pre>
+
+      </div>
+    </section>
+  </div>
+
+  {{> footer }}
+</body>
+</html>
