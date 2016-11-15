@@ -9,7 +9,9 @@ module.exports = function(grunt) {
           { expand: true, src: ['htaccess'], dest: 'dist/' },
           { expand: true, flatten: true, src: ['favicon/favicon.ico'], dest: 'dist/' },
           { expand: true, flatten: true, src: ['bower_components/bootstrap/dist/fonts/*'], dest: 'dist/fonts/' },
-          { expand: true, flatten: true, src: ['bower_components/font-awesome/fonts/*'], dest: 'dist/fonts/' }
+          { expand: true, flatten: true, src: ['bower_components/font-awesome/fonts/*'], dest: 'dist/fonts/' },
+          { src: 'html/badssl.html', dest: 'dist/badssl.html' },
+          { src: 'html/keydown.html', dest: 'dist/keydown.html' }
         ]
       }
     },
