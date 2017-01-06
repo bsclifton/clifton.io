@@ -44,6 +44,7 @@ body > footer .social {
   margin-top: 7px;
   font-size: 48px;
   text-align: center;
+  -webkit-user-select: none;
 }
 body > footer .social a {
   margin-right: 15px;

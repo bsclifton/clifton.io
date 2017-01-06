@@ -21,6 +21,8 @@ if ($_POST['url'] == '') {
   }
 
   $message = filter_var($_POST['message'], FILTER_SANITIZE_SPECIAL_CHARS);
+  $message = str_replace("&#10;", "\n", $message);
+  $message = str_replace("&#39;", "'", $message);
 
   $email_message = "Dear {{meta-author}}, \n\n" .
     "${formatted_name} just wrote a message for you on {{website-name}}. " .
