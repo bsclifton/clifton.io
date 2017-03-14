@@ -1,24 +1,6 @@
-function allowTracking() {
-  // https://developer.mozilla.org/en-US/docs/Web/API/Navigator/doNotTrack
-  return !(window.doNotTrack == "1" || navigator.doNotTrack == "yes" || navigator.doNotTrack == "1" || navigator.msDoNotTrack == "1");
-}
+/* global $, alert */
 
-function registerAnalytics(trackingId) {
-  if (allowTracking()) {
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', trackingId, 'auto');
-    // https://github.com/googleanalytics/autotrack
-    ga('require', 'autotrack');
-    ga('send', 'pageview');
-  } else {
-    console.log("Your browser has sent a \"Do Not Track\" preference and it will be honored. If you this setting was not present or if you allowed tracking, please know that we would only be reporting your usage of this site anonymously to Google Analytics.");
-  }
-}
-
-function getRecentBlogPosts() {
+function getRecentBlogPosts () {
   $('#blog-entries p').hide();
   $('#blog-entries .loading-container').show();
   $.ajax({
@@ -48,7 +30,7 @@ function getRecentBlogPosts() {
   });
 }
 
-function submitEmailForm() {
+function submitEmailForm () {
   var name = $('#email-name').val(),
       email = $('#email-address').val(),
       url = $('#email-url').val(),

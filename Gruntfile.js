@@ -21,7 +21,6 @@ module.exports = function(grunt) {
           'dist/js/<%= pkg.name %>.min.js': [
             'bower_components/jquery/dist/jquery.min.js',
             'bower_components/bootstrap/dist/js/bootstrap.min.js',
-            'bower_components/autotrack/autotrack.js',
             'js/app.js'
           ]
         }
