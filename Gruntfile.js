@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     copy: {
@@ -37,19 +37,20 @@ module.exports = function(grunt) {
         }
       }
     },
-    clean: [ "dist/" ],
+    clean: [ 'dist/' ],
     'compile-handlebars': {
-      target:{
+      target: {
+        templateData: 'hbs/config.json',
+        helpers: ['hbs/helpers/markdown.js'],
+        globals: ['secret.json'],
+        partials: ['hbs/partials/*.hbs'],
         files: [
           { src: 'hbs/index.hbs', dest: 'dist/index.html' },
           { src: 'hbs/learn.hbs', dest: 'dist/learn/index.html' },
           { src: 'hbs/about.hbs', dest: 'dist/about/index.html' },
           { src: 'hbs/email.php.hbs', dest: 'dist/about/email.php' },
           { src: 'hbs/ref-git.hbs', dest: 'dist/reference/git/index.html' }
-        ],
-        templateData: 'hbs/config.json',
-        globals: ['secret.json'],
-        partials: ['hbs/partials/*.hbs']
+        ]
       }
     },
     secret: grunt.file.readJSON('secret.json'),
@@ -70,15 +71,15 @@ module.exports = function(grunt) {
         }
       }
     }
-  });
+  })
 
-  grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-compile-handlebars');
-  grunt.loadNpmTasks('grunt-ssh-deploy');
+  grunt.loadNpmTasks('grunt-contrib-copy')
+  grunt.loadNpmTasks('grunt-contrib-uglify')
+  grunt.loadNpmTasks('grunt-contrib-cssmin')
+  grunt.loadNpmTasks('grunt-contrib-clean')
+  grunt.loadNpmTasks('grunt-compile-handlebars')
+  grunt.loadNpmTasks('grunt-ssh-deploy')
 
-  grunt.registerTask('default', ['clean', 'copy', 'uglify', 'cssmin', 'compile-handlebars']);
-  grunt.registerTask('deploy', ['default', 'ssh_deploy:production']);
-};
+  grunt.registerTask('default', ['clean', 'copy', 'uglify', 'cssmin', 'compile-handlebars'])
+  grunt.registerTask('deploy', ['default', 'ssh_deploy:production'])
+}
