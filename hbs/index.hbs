@@ -1,66 +1,31 @@
-<!DOCTYPE html>
-<html>
-{{> head head-title=title.index head-description=meta-description.index head-link=links.index }}
-<body>
-  <div id="content-wrapper" class="index">
-    <header>
-      <nav id="header" class="navbar navbar-default navbar-static-top" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand active" href="{{links.index}}" data-event-category="navigation-menu" data-event-action="home">{{meta-author}}</a>
-          </div>
-          <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="{{links.about}}" data-event-category="navigation-menu" data-event-action="about">about</a></li>
-              <li><a href="{{links.blog}}" data-event-category="navigation-menu" data-event-action="blog">blog</a></li>
-              <li><a href="{{links.learn}}" data-event-category="navigation-menu" data-event-action="learn">learn</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+{{#document 'index'}}
+  <section id="portrait-jumbo">
+    <div class="icons portrait"></div>
+    <h1>Hi, I'm Brian :)</h1>
+  </section>
 
-    <section id="portrait-jumbo">
-      <div class="icons portrait"></div>
-      <h1>Hi, I'm Brian :)</h1>
-    </section>
+  {{#section 'intro'}}
+    <p>
+      My goal is to make a difference in people's lives.
+    </p>
+    <p>
+      I've been writing code since 1993 and I want to share all the things I've learned along the way.
+    </p>
+    <p>
+      I'm always learning new things, <a title="My GitHub profile" href="{{links.github}}" rel="me nofollow noopener" target="_blank">contributing on GitHub</a>,
+      <a title="My Twitter account" href="{{links.twitter}}" rel="me nofollow noopener" target="_blank">tweeting about coding</a>,
+      and <a title="My blog" href="{{links.blog}}">blogging</a>.
+    </p>
+  {{/section}}
 
-    <section id="intro">
-      <div class="container">
-        <div>
-          <p>
-            My goal is to make a difference in people's lives.
-          </p>
-          <p>
-            I've been writing code since 1993 and I want to share all the things I've learned along the way.
-          </p>
-          <p>
-            I'm always learning new things, <a title="My GitHub profile" href="{{links.github}}" rel="me nofollow noopener" target="_blank">contributing on GitHub</a>,
-            <a title="My Twitter account" href="{{links.twitter}}" rel="me nofollow noopener" target="_blank">tweeting about coding</a>,
-            and <a title="My blog" href="{{links.blog}}">blogging</a>.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="main">
-      <div class="empty col-md-4"></div>
-      <div id="blog-entries" class="col-md-4">
-        <h4><i class="fa fa-newspaper-o" style="margin-right:10px;"></i>Recent blog entries</h4>
-        <div class="loading-container" style="display:none;"><div class="loading"></div></div>
-        <p class="no-entries" style="display:none;">No entries yet</p>
-        <p class="failure" style="display:none;">Error loading blog entries</p>
-      </div>
-      <div class="empty col-md-4"></div>
-    </section>
-  </div>
-
-  {{> footer index=true }}
-</body>
-</html>
+  <section id="main">
+    <div class="empty col-md-4"></div>
+    <div id="blog-entries" class="col-md-4">
+      <h4><i class="fa fa-newspaper-o" style="margin-right:10px;"></i>Recent blog entries</h4>
+      <div class="loading-container" style="display:none;"><div class="loading"></div></div>
+      <p class="no-entries" style="display:none;">No entries yet</p>
+      <p class="failure" style="display:none;">Error loading blog entries</p>
+    </div>
+    <div class="empty col-md-4"></div>
+  </section>
+{{/document}}

@@ -10,8 +10,8 @@ module.exports = function (grunt) {
           { expand: true, flatten: true, src: ['favicon/favicon.ico'], dest: 'dist/' },
           { expand: true, flatten: true, src: ['bower_components/bootstrap/dist/fonts/*'], dest: 'dist/fonts/' },
           { expand: true, flatten: true, src: ['bower_components/font-awesome/fonts/*'], dest: 'dist/fonts/' },
-          { src: 'html/badssl.html', dest: 'dist/badssl.html' },
-          { src: 'html/keydown.html', dest: 'dist/keydown.html' }
+          { src: 'html/badssl.html', dest: 'dist/browser/badssl.html' },
+          { src: 'html/keydown.html', dest: 'dist/browser/keydown.html' }
         ]
       }
     },
@@ -41,7 +41,7 @@ module.exports = function (grunt) {
     'compile-handlebars': {
       target: {
         templateData: 'hbs/config.json',
-        helpers: ['hbs/helpers/markdown.js'],
+        helpers: ['hbs/helpers/*.js'],
         globals: ['secret.json'],
         partials: ['hbs/partials/*.hbs'],
         files: [
