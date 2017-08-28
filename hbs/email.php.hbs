@@ -24,14 +24,14 @@ if ($_POST['url'] == '') {
   $message = str_replace("&#10;", "\n", $message);
   $message = str_replace("&#39;", "'", $message);
 
-  $email_message = "Dear {{meta-author}}, \n\n" .
-    "${formatted_name} just wrote a message for you on {{website-name}}. " .
+  $email_message = "Dear {{author}}, \n\n" .
+    "${formatted_name} just wrote a message for you on {{websiteName}}. " .
     "${formatted_email}. Here's their message...\n\n" .
     "${message}";
 
-  $email_to = "{{email-to}}";
-  $email_subject = "New message submitted on {{website-name}}";
-  $headers = "From: {{email-from}}\r\nX-Mailer: PHP/" . phpversion();
+  $email_to = "{{emailTo}}";
+  $email_subject = "New message submitted on {{websiteName}}";
+  $headers = "From: {{emailFrom}}\r\nX-Mailer: PHP/" . phpversion();
 
   @mail($email_to, $email_subject, $email_message, $headers);
 }

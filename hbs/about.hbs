@@ -1,34 +1,7 @@
-<!DOCTYPE html>
-<html>
-{{> head head-title=title.about head-description=meta-description.about head-link=links.about }}
-<body>
-  <div id="content-wrapper">
-    <header>
-    <nav id="header" class="navbar navbar-default navbar-static-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand active" href="{{links.index}}" data-event-category="navigation-menu" data-event-action="home">{{meta-author}}</a>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="{{links.about}}">about</a></li>
-            <li><a href="{{links.blog}}" data-event-category="navigation-menu" data-event-action="blog">blog</a></li>
-            <li><a href="{{links.learn}}" data-event-category="navigation-menu" data-event-action="learn">learn</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    </header>
-
-    <section id="page-content">
-      <div class="container">
-        <h1>{{title.about}}</h1>
+{{#document 'about'}}
+  <section id="page-content">
+    <div class="container">
+      <h1>{{title.about}}</h1>
 {{#markdown}}
 I'm a developer at [Brave Software](https://brave.com) and enjoy taking part in the open source community.
 _____
@@ -42,42 +15,39 @@ Some friends and I formed Morgopolis Studios, LLC in 2012 and released our first
 _____
 I’ve been writing software since the early 1990s (when I was 10 or 11 years old) and I still love it. I attended and got a bachelor's degree from UAT (University of Advancing Technology) here in the valley (Tempe, AZ).
 {{/markdown}}
-      </div>
-      <div class="container">
-        <div id="email-form">
-          <h2 id="contact">{{title.contact}}</h2>
-          <p>
-            Do you have a question or comment? Let me know what you think. Be sure to include your email address if you want a response.
-          </p>
-          <div class="form-group">
-            <label for="email-name">Name (optional)</label>
-            <input id="email-name" type="text" class="form-control" placeholder="Your name" data-event-category="contact-me" data-event-action="name">
-          </div>
-          <div class="form-group">
-            <label for="email-address">Email address (optional)</label>
-            <input id="email-address" type="email" class="form-control" placeholder="Your email address" data-event-category="contact-me" data-event-action="email">
-          </div>
-          <div class="form-group intentionally-blank">
-            <label for="email-url">Url</label>
-            <input id="email-url" type="text" class="form-control" placeholder="Your website url" data-event-category="contact-me" data-event-action="url">
-          </div>
-          <div class="form-group">
-            <label for="email-message">Message</label>
-            <textarea id="email-message" class="form-control" rows="5" placeholder="Your message" data-event-category="contact-me" data-event-action="message"></textarea>
-          </div>
-          <button id="email-submit" type="submit" class="btn btn-primary" onclick="submitEmailForm();" data-event-category="contact-me" data-event-action="submit">
-            Submit <i class="loading-button" style="display:none;"></i>
-          </button>
+    </div>
+    <div class="container">
+      <div id="email-form">
+        <h2 id="contact">{{title.contact}}</h2>
+        <p>
+          Do you have a question or comment? Let me know what you think. Be sure to include your email address if you want a response.
+        </p>
+        <div class="form-group">
+          <label for="email-name">Name (optional)</label>
+          <input id="email-name" type="text" class="form-control" placeholder="Your name" data-event-category="contact-me" data-event-action="name">
         </div>
-        <div id="email-sent" style="display:none;">
+        <div class="form-group">
+          <label for="email-address">Email address (optional)</label>
+          <input id="email-address" type="email" class="form-control" placeholder="Your email address" data-event-category="contact-me" data-event-action="email">
+        </div>
+        <div class="form-group intentionally-blank">
+          <label for="email-url">Url</label>
+          <input id="email-url" type="text" class="form-control" placeholder="Your website url" data-event-category="contact-me" data-event-action="url">
+        </div>
+        <div class="form-group">
+          <label for="email-message">Message</label>
+          <textarea id="email-message" class="form-control" rows="5" placeholder="Your message" data-event-category="contact-me" data-event-action="message"></textarea>
+        </div>
+        <button id="email-submit" type="submit" class="btn btn-primary" onclick="submitEmailForm();" data-event-category="contact-me" data-event-action="submit">
+          Submit <i class="loading-button" style="display:none;"></i>
+        </button>
+      </div>
+      <div id="email-sent" style="display:none;">
 {{#markdown}}
 ## Your message has been sent
 Thanks for the feedback! If you included your email and are expecting a response, I should be able to reply within 24 hours (no promises though).
 {{/markdown}}
-        </div>
       </div>
-    </section>
-  </div>
-  {{> footer about=true }}
-</body>
-</html>
+    </div>
+  </section>
+{{/document}}
