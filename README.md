@@ -23,18 +23,18 @@ Before you can build or deploy, you'll need to create a file `secret.json` at th
 
 ### Building
 
-To get started, you'll need to install grunt and bower:
+To get started, you'll need to install grunt:
 
 ```sh
-npm install -g grunt-cli bower
+npm install -g grunt-cli
 ```
 
-You can then clone the repo and install npm and bower dependencies:
+You can then clone the repo and install dependencies:
 
 ``` sh
 git clone git@github.com:clifton-io/clifton.io.git
 cd clifton.io
-npm install && bower install
+npm install
 grunt
 ```
 

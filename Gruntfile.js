@@ -8,8 +8,8 @@ module.exports = function (grunt) {
           { expand: true, src: ['robots.txt'], dest: 'dist/' },
           { expand: true, src: ['htaccess'], dest: 'dist/' },
           { expand: true, flatten: true, src: ['favicon/favicon.ico'], dest: 'dist/' },
-          { expand: true, flatten: true, src: ['bower_components/bootstrap/dist/fonts/*'], dest: 'dist/fonts/' },
-          { expand: true, flatten: true, src: ['bower_components/font-awesome/fonts/*'], dest: 'dist/fonts/' },
+          { expand: true, flatten: true, src: ['node_modules/bootstrap/dist/fonts/*'], dest: 'dist/fonts/' },
+          { expand: true, flatten: true, src: ['node_modules/font-awesome/fonts/*'], dest: 'dist/fonts/' },
           { src: 'html/badssl.html', dest: 'dist/browser/badssl.html' },
           { src: 'html/keydown.html', dest: 'dist/browser/keydown.html' }
         ]
@@ -19,8 +19,8 @@ module.exports = function (grunt) {
       target: {
         files: {
           'dist/js/<%= pkg.name %>.min.js': [
-            'bower_components/jquery/dist/jquery.min.js',
-            'bower_components/bootstrap/dist/js/bootstrap.min.js',
+            'node_modules/jquery/dist/jquery.min.js',
+            'node_modules/bootstrap/dist/js/bootstrap.min.js',
             'js/app.js'
           ]
         }
@@ -30,8 +30,8 @@ module.exports = function (grunt) {
       target: {
         files: {
           'dist/css/<%= pkg.name %>.min.css': [
-            'bower_components/bootstrap/dist/css/bootstrap.min.css',
-            'bower_components/font-awesome/css/font-awesome.min.css',
+            'node_modules/bootstrap/dist/css/bootstrap.min.css',
+            'node_modules/font-awesome/css/font-awesome.min.css',
             'css/app.css'
           ]
         }
