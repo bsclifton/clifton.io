@@ -172,6 +172,28 @@ table.table {
 }
 
 /* /about/ page */
+.badge {
+  background-image: url(/i/sprite-badges.png);
+  width: 116px;
+  height: 181px;
+  margin: 0px;
+  border: 0px;
+}
+.badge-godaddy {
+  background-position: 0px 0px;
+}
+.badge-intel {
+  background-position: -116px 0px;
+}
+@media (min-width: 800px) {
+  .badge { display: inline-block !important; }
+}
+@media (max-width: 799px) {
+  .badge { display: none !important; }
+  .media-left,
+  .media-right { padding: 0 !important; }
+}
+
 .intentionally-blank {
   display: none;
 }
