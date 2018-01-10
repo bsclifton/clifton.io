@@ -19,9 +19,9 @@ module.exports = function (id, options) {
     }
   }
 
-  const head = hbs.compile('{{> head }}')
-  const header = hbs.compile('{{> header }}')
-  const footer = hbs.compile('{{> footer }}')
+  const head = hbs.compile('{{> partials/head }}')
+  const header = hbs.compile('{{> partials/header }}')
+  const footer = hbs.compile('{{> partials/footer }}')
 
   return new hbs.SafeString(
       '<!DOCTYPE html>\n' +

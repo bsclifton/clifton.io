@@ -1,5 +1,8 @@
 /* global $, alert */
 
+const $ = require('jquery')
+const bootstrap = require('bootstrap')
+
 function getRecentBlogPosts () {
   $('#blog-entries p').hide()
   $('#blog-entries .loading-container').show()

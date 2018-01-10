@@ -37,7 +37,7 @@ module.exports = function (grunt) {
         }
       }
     },
-    clean: [ 'dist/' ],
+
     'compile-handlebars': {
       target: {
         templateData: 'hbs/config.json',
