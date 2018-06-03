@@ -1,6 +1,14 @@
 const hbs = require('handlebars')
 const config = require('../config.json')
 
+const headPartial = require('../partials/head.hbs')
+const headerPartial = require('../partials/header.hbs')
+const footerPartial = require('../partials/footer.hbs')
+
+hbs.registerPartial('head', headPartial)
+hbs.registerPartial('header', headerPartial)
+hbs.registerPartial('footer', footerPartial)
+
 module.exports = function (id, options) {
   let activeDocument
 
@@ -19,9 +27,9 @@ module.exports = function (id, options) {
     }
   }
 
-  const head = hbs.compile('{{> partials/head }}')
-  const header = hbs.compile('{{> partials/header }}')
-  const footer = hbs.compile('{{> partials/footer }}')
+  const head = hbs.compile('{{> head }}')
+  const header = hbs.compile('{{> header }}')
+  const footer = hbs.compile('{{> footer }}')
 
   return new hbs.SafeString(
       '<!DOCTYPE html>\n' +
