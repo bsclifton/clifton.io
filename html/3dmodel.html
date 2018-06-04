@@ -1,0 +1,33 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <script type="text/javascript" language="javascript">
+      /* global WebGLRenderingContext */
+      'use strict'
+
+      function setupWebGL (event, success, failure) {
+        window.removeEventListener(event.type, setupWebGL, false)
+
+        var canvas = document.querySelector('canvas')
+        var gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl')
+        if (gl && gl instanceof WebGLRenderingContext) {
+          if (success) success(gl)
+        } else {
+          if (failure) failure()
+        }
+      }
+
+      window.addEventListener('load', function (event) {
+        setupWebGL(event, function (gl) {
+          gl.viewport(0, 0, gl.drawingBufferWidth, gl.drawingBufferHeight)
+          gl.clearColor(0.0, 0.5, 0.0, 1.0)
+          gl.clear(gl.COLOR_BUFFER_BIT)
+        }, function () {
+          console.log('not supported')
+        })
+      }, false)
+    </script>
+    <canvas>Your browser does not seem to support HTML5 canvas.</canvas>
+  </body>
+</html>

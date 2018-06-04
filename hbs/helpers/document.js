@@ -53,7 +53,8 @@ module.exports = function (id, options) {
       footer({
         index: id === 'index',
         links: config.links,
-        author: config.author
+        author: config.author,
+        copyrightYear: new Date().getFullYear()
       }) +
       '</html>')
 }

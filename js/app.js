@@ -1,9 +1,10 @@
-/* global $, alert */
+/* global alert */
 
 const $ = require('jquery')
-const bootstrap = require('bootstrap')
+window.jQuery = $
+const bootstrap = require('bootstrap') // eslint-disable-line no-unused-vars
 
-function getRecentBlogPosts () {
+window.getRecentBlogPosts = function () {
   $('#blog-entries p').hide()
   $('#blog-entries .loading-container').show()
   $.ajax({
@@ -12,7 +13,10 @@ function getRecentBlogPosts () {
     dataType: 'json',
     url: 'https://blog.clifton.io/api/get_recent_posts/?count=5'
   }).done(function (data, textStatus, response) {
-    var postCount = 0, posts, post, i
+    var postCount = 0
+    var posts
+    var post
+    var i
     if (data !== null || typeof data !== 'undefined') {
       postCount = data.count
       posts = data.posts
@@ -33,11 +37,11 @@ function getRecentBlogPosts () {
   })
 }
 
-function submitEmailForm () {
-  var name = $('#email-name').val(),
-    email = $('#email-address').val(),
-    url = $('#email-url').val(),
-    message = $('#email-message').val()
+window.submitEmailForm = function () {
+  var name = $('#email-name').val()
+  var email = $('#email-address').val()
+  var url = $('#email-url').val()
+  var message = $('#email-message').val()
 
   $('[id^=email-]').prop('disabled', true)
   $('i.loading-button').show()
@@ -57,7 +61,7 @@ function submitEmailForm () {
   })
 }
 
-function setupEmailForm () {
+window.setupEmailForm = function () {
   $('#email-submit').prop('disabled', true)
 
   $('#email-message').keyup(function () {
