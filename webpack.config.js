@@ -2,34 +2,63 @@ const path = require('path')
 
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const HtmlWebpackIncludeAssetsPlugin = require('html-webpack-include-assets-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+// const HtmlWebpackIncludeAssetsPlugin = require('html-webpack-include-assets-plugin')
 
 module.exports = {
-  entry: path.join(__dirname, 'js', 'app.js'),
+  mode: 'development',
+  entry: {
+    'bundle.js': [
+      path.resolve(__dirname, 'js/app.js')
+    ],
+    'bundle.css': [
+      path.resolve(__dirname, 'node_modules/bootstrap/dist/css/bootstrap.min.css'),
+      path.resolve(__dirname, 'node_modules/font-awesome/css/font-awesome.min.css'),
+      path.resolve(__dirname, 'css/app.css')
+    ]
+  },
   output: {
-    path: path.join(__dirname, 'dist'),
-    filename: 'app.bundle.js'
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name]'
   },
   module: {
-    loaders: [{
-      // https://github.com/pcardune/handlebars-loader
-      test: /\.hbs$/,
-      loader: 'handlebars-loader',
-      // TODO: need to implement context
-      // see https://github.com/pcardune/handlebars-loader/issues/126
-      query: {
-        helperDirs: [
-          path.join(__dirname, 'hbs', 'helpers')
-        ],
-        partialDirs: [
-          path.join(__dirname, 'hbs', 'partials')
+    rules: [
+      {
+        // https://github.com/pcardune/handlebars-loader
+        test: /\.hbs$/,
+        use: [{
+          loader: 'handlebars-loader',
+          // TODO: need to implement context
+          // see https://github.com/pcardune/handlebars-loader/issues/126
+          options: {
+            helperDirs: [
+              path.resolve(__dirname, 'hbs', 'helpers')
+            ],
+            partialDirs: [
+              path.resolve(__dirname, 'hbs', 'partials')
+            ]
+          }
+        }]
+      },
+      {
+        test: /\.(png|woff|woff2|eot|ttf|svg|jpg|jpeg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'url-loader?limit=10000&mimetype=application/font-woff'
+      },
+      {
+        test: /\.css$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader'
         ]
       }
-    }]
+    ]
   },
   plugins: [
     // https://github.com/johnagan/clean-webpack-plugin
     new CleanWebpackPlugin(['dist']),
+
+    // https://github.com/webpack-contrib/mini-css-extract-plugin
+    new MiniCssExtractPlugin('[name].css'),
 
     // https://github.com/jantimon/html-webpack-plugin
     new HtmlWebpackPlugin({
@@ -48,16 +77,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'hbs/learn.html.hbs',
       filename: 'learn/index.html'
-    }),
+    })
 
     // https://github.com/jharris4/html-webpack-include-assets-plugin
-    new HtmlWebpackIncludeAssetsPlugin({
-      assets: [
-        'node_modules/bootstrap/dist/css/bootstrap.min.css',
-        'node_modules/font-awesome/css/font-awesome.min.css',
-        'css/app.css'
-      ],
-      append: false
-    })
+    // new HtmlWebpackIncludeAssetsPlugin({
+    //   assets: [
+    //   ],
+    //   append: false
+    // })
   ]
 }
