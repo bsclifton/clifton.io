@@ -4,6 +4,8 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
+const config = require('./hbs/config.json')
+
 module.exports = {
   mode: 'development',
   entry: {
@@ -22,8 +24,6 @@ module.exports = {
         test: /\.hbs$/,
         use: [{
           loader: 'handlebars-loader',
-          // TODO: need to implement context
-          // see https://github.com/pcardune/handlebars-loader/issues/126
           options: {
             helperDirs: [
               path.resolve(__dirname, 'hbs', 'helpers')
@@ -47,6 +47,11 @@ module.exports = {
       }
     ]
   },
+  resolve: {
+    alias: {
+      'handlebars': 'handlebars/dist/handlebars.js'
+    }
+  },
   plugins: [
     // https://github.com/johnagan/clean-webpack-plugin
     new CleanWebpackPlugin(['dist']),
@@ -59,20 +64,24 @@ module.exports = {
     // https://github.com/jantimon/html-webpack-plugin
     new HtmlWebpackPlugin({
       template: 'hbs/index.html.hbs',
-      filename: 'index.html'
+      filename: 'index.html',
+      ...config
     }),
     new HtmlWebpackPlugin({
       template: 'hbs/about.html.hbs',
-      filename: 'about/index.html'
+      filename: 'about/index.html',
+      ...config
     }),
     new HtmlWebpackPlugin({
       template: 'hbs/email.php.hbs',
       filename: 'about/email.php',
+      ...config,
       inject: false
     }),
     new HtmlWebpackPlugin({
       template: 'hbs/learn.html.hbs',
-      filename: 'learn/index.html'
+      filename: 'learn/index.html',
+      ...config
     })
   ]
 }
