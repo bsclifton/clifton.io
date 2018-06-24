@@ -1,8 +1,16 @@
 /* global alert */
 
+// JavaScript files used by app
 const $ = require('jquery')
 window.jQuery = $
-const bootstrap = require('bootstrap') // eslint-disable-line no-unused-vars
+/* eslint-disable no-unused-vars */
+const bootstrap = require('bootstrap')
+
+// Styles used by app
+const cssBootstrap = require('bootstrap/dist/css/bootstrap.min.css')
+const cssFontAwesome = require('font-awesome/css/font-awesome.min.css')
+const css = require('../css/app.css')
+/* eslint-enable no-unused-vars */
 
 window.getRecentBlogPosts = function () {
   $('#blog-entries p').hide()

@@ -92,7 +92,7 @@ p {
 }
 .portrait {
   display: inline-block;
-  background-image: url(/i/sprite-index.jpg);
+  background-image: url(../i/sprite-index.jpg);
   background-position: 0px 0px;
   width: 322px;
   height: 322px;
@@ -136,7 +136,7 @@ section#main div#blog-entries {
 }
 .loading {
   display: inline-block;
-  background-image: url(/i/ajax-loader.gif);
+  background-image: url(../i/ajax-loader.gif);
   width: 16px;
   height: 11px;
 }
@@ -154,7 +154,7 @@ table.table {
 
 .learn-factory {
   display: inline-block;
-  background-image: url(/i/sprite-learn.png);
+  background-image: url(../i/sprite-learn.png);
   background-position: 0px 0px;
   width: 320px;
   height: 194px;
@@ -163,7 +163,7 @@ table.table {
 }
 .learn-dw {
   display: inline-block;
-  background-image: url(/i/sprite-learn.png);
+  background-image: url(../i/sprite-learn.png);
   background-position: 0px -194px;
   width: 320px;
   height: 193px;
@@ -178,7 +178,7 @@ table.table {
 
 i.loading-button {
   display: inline-block;
-  background-image: url(/i/loader-button-16x16.gif);
+  background-image: url(../i/loader-button-16x16.gif);
   width: 16px;
   height: 16px;
   position: relative;

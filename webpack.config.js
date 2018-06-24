@@ -3,18 +3,12 @@ const path = require('path')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-// const HtmlWebpackIncludeAssetsPlugin = require('html-webpack-include-assets-plugin')
 
 module.exports = {
   mode: 'development',
   entry: {
     'bundle.js': [
       path.resolve(__dirname, 'js/app.js')
-    ],
-    'bundle.css': [
-      path.resolve(__dirname, 'node_modules/bootstrap/dist/css/bootstrap.min.css'),
-      path.resolve(__dirname, 'node_modules/font-awesome/css/font-awesome.min.css'),
-      path.resolve(__dirname, 'css/app.css')
     ]
   },
   output: {
@@ -41,7 +35,7 @@ module.exports = {
         }]
       },
       {
-        test: /\.(png|woff|woff2|eot|ttf|svg|jpg|jpeg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        test: /\.(png|woff|woff2|eot|ttf|svg|jpg|jpeg|gif)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'url-loader?limit=10000&mimetype=application/font-woff'
       },
       {
@@ -58,7 +52,9 @@ module.exports = {
     new CleanWebpackPlugin(['dist']),
 
     // https://github.com/webpack-contrib/mini-css-extract-plugin
-    new MiniCssExtractPlugin('[name].css'),
+    new MiniCssExtractPlugin({
+      filename: 'bundle.css'
+    }),
 
     // https://github.com/jantimon/html-webpack-plugin
     new HtmlWebpackPlugin({
@@ -78,12 +74,5 @@ module.exports = {
       template: 'hbs/learn.html.hbs',
       filename: 'learn/index.html'
     })
-
-    // https://github.com/jharris4/html-webpack-include-assets-plugin
-    // new HtmlWebpackIncludeAssetsPlugin({
-    //   assets: [
-    //   ],
-    //   append: false
-    // })
   ]
 }
