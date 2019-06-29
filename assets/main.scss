@@ -1,0 +1,39 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+.site-title {
+  text-transform: uppercase;
+}
+
+.site-header {
+  border-bottom-width: 5px;
+}
+
+.site-footer {
+  background-color: #4f4f4f;
+  color: #ccc;
+  border-top: 5px solid #e7e7e7;
+
+  .wrapper {
+    text-align: center;
+  }
+
+  .social-media-list {
+    margin-bottom: 0;
+
+    li {
+      display: inline-block;
+      padding-right: 40px;
+    }
+    li + li {
+      padding-top: 0;
+    }
+  }
+
+  .svg-icon {
+    fill: #337ab7;
+  }
+}
