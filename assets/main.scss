@@ -37,3 +37,63 @@
     fill: #337ab7;
   }
 }
+
+/* formatting for headers / titles / paragraphs */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif !important;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+/* landing page */
+#portrait-jumbo {
+  text-align: center;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+.portrait {
+  display: inline-block;
+  background-image: url(sprite-index.jpg);
+  background-position: 0px 0px;
+  width: 322px;
+  height: 322px;
+  margin: 0px;
+  border: 0px;
+}
+#intro {
+  text-align: center;
+}
+
+/* /about/ page */
+table#about-me {
+  border: 0px;
+  td {
+    border: 0;
+  }
+}
+.badge {
+  background-image: url(sprite-badges.png);
+  width: 116px;
+  height: 181px;
+  margin: 0px;
+  border: 0px;
+}
+.badge-godaddy {
+  background-position: 0px 0px;
+}
+.badge-intel {
+  background-position: -116px 0px;
+}
+@media (min-width: 800px) {
+  .badge { display: block; }
+}
+@media (max-width: 799px) {
+  .badge { display: none !important; }
+  .media-left,
+  .media-right { padding: 0 !important; }
+}
