@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Learn programming
+nav_title: Learn
 permalink: /learn/
 ---
 

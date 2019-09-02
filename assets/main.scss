@@ -4,11 +4,47 @@
 
 @import "minima";
 
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
 .site-title {
+  color: #777 !important;
+  font-size: 18px;
+  font-weight: unset;
+  letter-spacing: unset;
+  line-height: 20px;
+  padding: 17px;
+  text-decoration: none;
   text-transform: uppercase;
 }
 
+.site-nav {
+  .page-link {
+    color: #777;
+    display: inline-block;
+    line-height: 56px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .page-link.active {
+    background-color: #e7e7e7;
+    color: #555;
+  }
+}
+
+.site-nav .page-link:not(:last-child) {
+  margin: 0;
+}
+
+.post-header {
+  margin-bottom: 10px;
+}
+
 .site-header {
+  background-color: #f8f8f8;
   border-bottom-width: 5px;
 }
 
@@ -36,6 +72,10 @@
   .svg-icon {
     fill: #337ab7;
   }
+}
+
+.post-title {
+  font-size: 36px;
 }
 
 /* formatting for headers / titles / paragraphs */
@@ -72,9 +112,11 @@ hr {
 /* /about/ page */
 table#about-me {
   border: 0px;
+  padding: 0 15px;
   td {
     border: 0;
   }
+  margin-bottom: 0;
 }
 .badge {
   background-image: url(sprite-badges.png);

@@ -4,4 +4,6 @@
 
 layout: home
 title: Blog
+redirect_url: https://blog.clifton.io
+nav_title: Blog
 ---
