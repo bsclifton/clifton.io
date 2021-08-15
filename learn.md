@@ -2,6 +2,7 @@
 layout: page
 title: Learn programming
 nav_title: Learn
+url: /learn/
 permalink: /learn/
 ---
 

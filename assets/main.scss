@@ -4,6 +4,10 @@
 
 @import "minima";
 
+/***********************************
+Tweaks to minima
+***********************************/
+
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
@@ -87,29 +91,44 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #e7e7e7;
 }
 
-/* landing page */
-#portrait-jumbo {
+/***********************************
+Landing page styles
+
+- used on layout `default-landing`
+- only used on `index.md`
+***********************************/
+
+.landing-page-content {
+  padding-top: 0;
+}
+.landing-wrapper {
+  max-width: 100%;
+  padding: 0;
+}
+.landing-portrait-jumbo {
+  background-color: #000;
   text-align: center;
   padding: 0px;
   margin-bottom: 0px;
+  h1 {
+    color: #fff;
+    font-size: 24pt;
+    margin-top: 15px;
+  }
+  border-bottom: 5px solid #337ab7;
+  margin-bottom: 20px;
 }
-.portrait {
-  display: inline-block;
-  background-image: url(sprite-index.jpg);
-  background-position: 0px 0px;
-  width: 322px;
-  height: 322px;
-  margin: 0px;
-  border: 0px;
-}
-#intro {
+.landing-intro {
   text-align: center;
+  font-size: 14pt;
 }
 
-/* /about/ page */
+/***********************************
+About page styles
+***********************************/
 table#about-me {
   border: 0px;
   padding: 0 15px;
@@ -118,12 +137,20 @@ table#about-me {
   }
   margin-bottom: 0;
 }
+.about-pictures {
+  text-align: center;
+  width: 100%;
+  img {
+    border: 1px solid #e7e7e7;
+    margin: 5px;
+  }
+}
 .badge {
-  background-image: url(sprite-badges.png);
+  background-image: url(about-badges.png);
   width: 116px;
   height: 181px;
   margin: 0px;
-  border: 0px;
+  border: 1px solid #e7e7e7;
 }
 .badge-godaddy {
   background-position: 0px 0px;
@@ -133,9 +160,11 @@ table#about-me {
 }
 @media (min-width: 800px) {
   .badge { display: block; }
+  .about-pictures { display: inline-block; }
 }
 @media (max-width: 799px) {
   .badge { display: none !important; }
+  .about-pictures { display: none !important; }
   .media-left,
   .media-right { padding: 0 !important; }
 }

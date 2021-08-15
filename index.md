@@ -2,15 +2,15 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: page
+layout: default-landing
 ---
 
-<div id="portrait-jumbo">
-  <div class="icons portrait"></div>
+<div class="landing-portrait-jumbo">
+  <img src="/assets/landing-portrait.jpg" width="240px" />
   <h1>Hi, I'm Brian :)</h1>
 </div>
 
-<div id="intro" markdown="1">
+<div class="landing-intro" markdown="1">
   My goal is to make a difference in people's lives.
 
   I've been writing code since 1993 and I want to share all the things I've learned along the way.
