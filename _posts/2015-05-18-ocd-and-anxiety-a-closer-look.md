@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "OCD and anxiety: a closer look"
-date:   2015-05-18 21:42:00 -0700
+title: "OCD and anxiety: a closer look"
+description: "I live with Obsessive-compulsive disorder. I have it mostly under control, but sometimes there are bad days. This post elaborates on some of my challenges."
+date: 2015-05-18 21:42:00 -0700
 categories: ocd
 ---
 

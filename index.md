@@ -1,8 +1,6 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default-landing
+description: Brian Clifton is an American computer programmer and businessman living in Chandler, Arizona.
 ---
 
 <div class="landing-portrait-jumbo">

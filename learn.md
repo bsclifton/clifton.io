@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Learn programming
+description: Learn about programming! This post has a lot of great info to help get you started.
 nav_title: Learn
 url: /learn/
 permalink: /learn/

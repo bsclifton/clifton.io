@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Why I'm not interested in self-driving cars"
+description: "I can definitely appreciate why folks want to solve the self-driving cars problem. But I personally believe that it's an overly complex problem which is not worth solving."
 date:   2018-02-07 23:28:00 -0700
 categories: thoughts
 ---

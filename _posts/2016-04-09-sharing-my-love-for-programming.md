@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Sharing my love for programming with kids"
-date:   2016-04-09 09:14:00 -0700
+title: "Sharing my love for programming with kids"
+description: "Pictures and info about a talk that Matt Smith and I did. We talked about programming with two classes at Madison #1 Middle School in Phoenix, AZ."
+date: 2016-04-09 09:14:00 -0700
 categories: giving back
 ---
 

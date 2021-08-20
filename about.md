@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About me
+description: Some info about myself and my career.
 nav_title: About
 url: /about/
 permalink: /about/
@@ -16,7 +17,6 @@ It's been amazing seeing our company and product grow!
   <image src="/assets/about-brave-brendan.jpg" height="200px" />
   <image src="/assets/about-brave-chrome-cake.jpg" height="200px" />
   <image src="/assets/about-brave-cake-cut.jpg" height="200px" />
-
 </div>
 
 -----

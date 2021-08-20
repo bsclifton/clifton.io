@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Lessons I’ve learned in the last 12 years"
-date:   2015-10-22 06:57:00 -0700
+title: "Lessons I’ve learned in the last 12 years"
+description: "Life changing lessons I've learned in my career as a software engineer. TL;DR: there's always room for improvement :)"
+date: 2015-10-22 06:57:00 -0700
 categories: career related
 ---
 

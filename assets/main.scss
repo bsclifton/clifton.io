@@ -66,7 +66,6 @@ body {
 
     li {
       display: inline-block;
-      padding-right: 40px;
     }
     li + li {
       padding-top: 0;
@@ -75,6 +74,15 @@ body {
 
   .svg-icon {
     fill: #337ab7;
+    transform: scale(2.5);
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .svg-icon:hover {
+    fill: #23527c;
+  }
+  .username {
+    display: none;
   }
 }
 
