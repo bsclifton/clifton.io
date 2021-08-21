@@ -3,7 +3,7 @@ layout: post
 title: "An introduction to hosting"
 description: "What is hosting? This post answers that question by sharing examples and also explaining how your web browser communicates with hosting accounts."
 date: 2016-04-15 09:00:00 -0700
-categories: hosting
+categories: "hosting"
 ---
 
 Hosting is the physical place where "content" (web sites, images, files, etc) lives at. Basically, this is just another person's computer. When you hear people talking about "the cloud", they're talking about hosting.

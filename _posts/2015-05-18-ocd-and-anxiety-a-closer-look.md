@@ -3,7 +3,7 @@ layout: post
 title: "OCD and anxiety: a closer look"
 description: "I live with Obsessive-compulsive disorder. I have it mostly under control, but sometimes there are bad days. This post elaborates on some of my challenges."
 date: 2015-05-18 21:42:00 -0700
-categories: ocd
+categories: "ocd"
 ---
 
 I'm pretty open with folks about having OCD and I've also written briefly about my experience before in a previous blog entry, <a href="https://blog.clifton.io/living-with-ocd-anxiety/">"Living with OCD and anxiety"</a>. When people ask me about it (and I encourage them to), I'm often asked, "What type of OCD do you have?". Do I wash my hands all the time? Or do I count tiles on the floor? *What's the deal*?

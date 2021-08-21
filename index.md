@@ -1,5 +1,5 @@
 ---
-layout: default-landing
+layout: default-extended
 description: Brian Clifton is an American computer programmer and businessman living in Chandler, Arizona.
 ---
 

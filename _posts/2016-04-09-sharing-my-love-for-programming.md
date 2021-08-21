@@ -3,7 +3,7 @@ layout: post
 title: "Sharing my love for programming with kids"
 description: "Pictures and info about a talk that Matt Smith and I did. We talked about programming with two classes at Madison #1 Middle School in Phoenix, AZ."
 date: 2016-04-09 09:14:00 -0700
-categories: giving back
+categories: "giving back"
 ---
 
 Just over a week ago (March 31st), I got the opportunity to team up with my co-worker and friend Matt Smith to give a talk for two different classes at [Madison #1 Middle School](https://madisonaz.org/no1-middle-school/home/) here in beautiful Phoenix, Arizona.

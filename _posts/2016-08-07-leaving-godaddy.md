@@ -3,7 +3,7 @@ layout: post
 title: "Why I left a job I loved"
 description: "After 8 great years at GoDaddy and still loving my job, I left to join a small San Francisco startup, Brave Software. Why? Read and find out :)"
 date: 2016-08-07 13:06:00 -0700
-categories: career related
+categories: "career related"
 ---
 
 ![From GoDaddy to Brave](https://blog.clifton.io/wp-content/uploads/2016/08/gd-to-brave.png){:class="img-responsive"}

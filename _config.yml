@@ -25,6 +25,7 @@ github_username:  bsclifton
 linkedin_username: bsclifton
 
 # Build settings
+show_excerpts: true
 markdown: kramdown
 theme: minima
 plugins:

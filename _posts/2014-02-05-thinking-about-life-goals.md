@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Thinking about life goals"
+description: "Reflecting on where I am now in life, what I'd like to accomplish in the years to come, and realizing I have to drop some goals in order to focus."
+date: 2014-02-05 01:51:21 -0700
+categories: "thoughts"
+---
+
+I love my life. My friends, my family… The work I do every day as a computer programmer that actually gives my life a sense of fulfillment and meaning. But I’m at a point now where I often find myself thinking in-depth about the life I’ve made for myself… asking, “What’s next?”. Projects get completed at work, paychecks come in… Personal debt goes down, balance in the retirement account goes up. When you’re a kid, you’re conditioned to think about what you want to do when you “grow up”. For me that meant figuring out what I wanted to do for my professional working life… but I don’t think I ever really put any thought into what I wanted to do with myself after I grew up.
+
+When you’re young, you have the luxury of pursuing any dreams you have and honestly just doing whatever you want. You’re like an artist with a chisel in front of a solid block of marble; you can make any kind of statue you’d like. You’ll try things… they might not turn out the way you want, but you can learn from your experiences and either get better or give up and try something else. I’m not calling myself old by any means, but each year that goes by I’ve definitely gotten wiser and at the same time more ingrained in the life I’ve created for myself as things start to take shape. Sticking with that marble statue analogy, you can keep carving pieces off as you work on this masterpiece of yours and eventually, after years of doing this, you get to a point where you’ve got a pretty solid idea of what you’re working on and you have an opportunity to pause and think about how you’d like to finish the project.
+
+It would be pretty easy at any given point to just say, “Fuck it”, and keep living life day to day, just seeing how things play out. But I personally think life is just way too short to do that. I’ve gotten this far and dammit, I want to have the best possible time on this planet that I can before I’m gone.
+
+Using this time to reflect, I’m realizing that you’re evolving with each decision you make and the experiences you have are like chipped off pieces in this statue you’re carving. Each goal you had in life adjusts itself as time goes by, getting a higher or lower priority. This crossroads is a point where you can look at all the goals you’ve came up with for your life…the priority you’ve associated with them… and then pick the ones you’re going to do, knowing very well that there are things that you’re going to die never having accomplished.
+
+For example, I’m thinking about how much I used to enjoy learning about other cultures and wanting to travel the world. I studied Japanese for about two years, Arabic and Hebrew for about a year each and I’ve always been somewhat decent at Spanish. As far as traveling, I’ve been to many of the states here in America (including Hawaii and Alaska) but internationally, I’ve only ever been to Mexico and Canada. But now I’m realizing that I’ll probably never see the world and I’m perfectly OK with that. And becoming proficient in any language other than Spanish? Not to sell myself short, but I really don’t think that’s happening. Which is hard to accept, thinking about the adventure of going to Europe and backpacking… or visiting Egypt to see the pyramids, or castles, gardens and pagodas in Japan. But at this point in my life, as much as I’d love to speak several languages fluently and be this amazing world traveler, there are ultimately other things I’d rather be doing which shove this dream further and further down the “bucket list”.
+
+I guess the overall theme I’m writing about here is focusing. When you start to realize what your favorite things in life are, what you love doing… it’s really hard to justify doing something else. There’s just not enough time, which really sucks. But I’d rather spend a lot of time doing the things I’ve loved than to spent a little time doing a whole bunch of things that I think are just “OK”. So after all this deep thought and reflection, what are some of those goals?
+
+## Making a difference in people’s lives
+Through my job I’m getting a chance to work on great products that can make a difference in people’s lives. And although it’s hard to measure, I’d like to think I’ve personally made a big impact on coworkers at every job I’ve been at. I don’t think there are many people that forget me, that’s for sure. Whether it’s kicking ass at the project I’m working on, mentoring someone, jumping in to help fire-fight issues that come up, or just trying to keep team morale high and facilitate good communication, I want to make a difference. Outside of work too, helping people work through issues and making a positive difference in their life.
+
+## Paying off all of my debt
+This is a huge one and it’s not exactly fun either. In fact, it sucks. I think anybody would rather be taking a trip overseas or buying a sports car. But the reality is, all I have left that I owe are my wife’s student loans and the mortgage on my house. After those are paid, I don’t owe anybody a penny. And that’s huge in my opinion.
+
+## Being in better shape and being there for my son
+I’m not morbidly obese but I’m not skinny. And body size aside, I’m in embarrassingly bad shape, cardio-wise. If you know me, you’ll know how I have a hard time staying away from sweets and diet soda, things that are just rotting my body away. Those things do help push me through crunch times, but I’ve got a son now and I want to be able to do an activity without falling over and having a heart attack. It would be awfully hard to be a good dad sitting on the couch.
+
+## Living in Hawaii
+I’ve only vacationed in Hawaii twice but I’ve spent almost a month and a half there total. I’ve been to Oahu, Maui, Lanai, and the big island. And later this year I’ll be going back there for my brother’s wedding, this time in Kauai. I love the beaches, the parks, and the weather. It’s really easy to idolize a place like this and think going there will “make my life complete”; but I’d honestly like to see if I could get bored of a place like this. That sounds like a great challenge to me.

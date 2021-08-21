@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Why I'm not interested in self-driving cars"
+title: "Why I'm not interested in self-driving cars"
 description: "I can definitely appreciate why folks want to solve the self-driving cars problem. But I personally believe that it's an overly complex problem which is not worth solving."
-date:   2018-02-07 23:28:00 -0700
-categories: thoughts
+date: 2018-02-07 23:28:00 -0700
+categories: "thoughts"
 ---
 
 Being in the tech world, it's hard to go even one day without hearing self-driving cars mentioned. On Twitter, on the news, or in everyday conversations. Here in Chandler Arizona, you'll even see a decent number of the Waymo cars driving around. It's really easy to spot them because of how unusual they look: a white minivan with a huge siren looking thing mounted on top and a green W on each side.
