@@ -7,19 +7,16 @@ url: /learn/
 permalink: /learn/
 ---
 
+<strong><em>
+  This page is a work in progress- please understand that it's not done yet. If you have ideas on what can be better please consider <a href="https://github.com/bsclifton/clifton.io/issues/new" rel="nofollow noopener" target="_blank">opening an issue on GitHub</a>
+</em></strong>
 
-<p>
-  <strong><em>This page is a work in progress- please understand that it's not done yet and <a href="{{links.contact}}" title="{{title.contact}}">contact me</a> if you have ideas on what can be better</em></strong>
-</p>
-<p>
-  I love programming and want to share it with as many people as possible. When I was a kid, I had no idea what I wanted to do "when I grow up".
-  Writing code was something that started off as a hobby and ended up being what I got into professionally.
-</p>
+I love programming and want to share it with as many people as possible. When I was a kid, I had no idea what I wanted to do "when I grow up".
+Writing code was something that started off as a hobby and ended up being what I got into professionally.
 
-<h2 id="why">Why?</h2>
-<p>
-  It's never too early (or too late) to get into programming. Writing code isn't "for nerds"- it's something anybody can learn to do.
-</p>
+## Why?
+
+It's never too early (or too late) to get into programming. Writing code isn't "for nerds"- it's something anybody can learn to do.
 
 ### Have fun and meet great people
 
@@ -145,7 +142,7 @@ Visual Studio is a complete programming environment available to everyone for fr
   </ul>
 </p>
 
-#### Check out Steam Greenlight</h4>
+#### Check out Steam Greenlight
 Once you have something up and running, you can consider targetting Steam's <a href="https://steamcommunity.com/greenlight/" rel="nofollow noopener" target="_blank">Greenlight</a>.
 
 
