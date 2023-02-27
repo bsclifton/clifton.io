@@ -26,4 +26,17 @@ bundle exec jekyll serve
 
 ### Deploying
 
-TBD
+Manual for the moment. Steps so that I don't forget them:
+
+```
+cd _site/
+tar -czf ../site.tar.gz .
+ssh brian@clifton.io
+cd /srv/clifton.io-releases/
+mkdir YYYY-MM-DD
+cd YYYY-MM-DD
+tar -xzf ~brian/site.tar.gz .
+cd /srv/
+ln -s /srv/clifton.io-releases/YYYY-MM-DD ./clifton.io
+```
+
