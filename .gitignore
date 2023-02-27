@@ -1,6 +1,9 @@
-node_modules
-Thumbs.db
-dist
-secret.json
-gimp
+.bundle
 .DS_Store
+.jekyll-cache
+.jekyll-metadata
+.sass-cache
+_drafts
+_site
+gimp
+Thumbs.db
