@@ -4,6 +4,7 @@ title: 1994 Mercedes-Benz SL320 Gallery (page 5)
 description: Pictures of my 1994 Mercedes-Benz SL320 (page 5).
 url: /cars/1994-sl320/gallery/5/
 permalink: /cars/1994-sl320/gallery/5/
+show_in_nav: false
 ---
 
 ## Gallery (page 5)

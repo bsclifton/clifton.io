@@ -31,12 +31,16 @@ Manual for the moment. Steps so that I don't forget them:
 ```
 cd _site/
 tar -czf ../site.tar.gz .
+cd ..
+scp ./site.tar.gz brian@clifton.io:~/
 ssh brian@clifton.io
 cd /srv/clifton.io-releases/
 mkdir YYYY-MM-DD
 cd YYYY-MM-DD
 tar -xzf ~brian/site.tar.gz .
+rm ~brian/site.tar.gz
 cd /srv/
+rm clifton.io
 ln -s /srv/clifton.io-releases/YYYY-MM-DD ./clifton.io
 ```
 
