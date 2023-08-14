@@ -22,6 +22,7 @@ Pictures might take a while to load! Please be patient
 
 <hr>
 
+<a href="/assets/cars-1994-sl320/sl040.jpg"><image src="/assets/cars-1994-sl320/sl040.jpg" /></a>
 <a href="/assets/cars-1994-sl320/sl041.jpg"><image src="/assets/cars-1994-sl320/sl041.jpg" /></a>
 <a href="/assets/cars-1994-sl320/sl042.jpg"><image src="/assets/cars-1994-sl320/sl042.jpg" /></a>
 <a href="/assets/cars-1994-sl320/sl043.jpg"><image src="/assets/cars-1994-sl320/sl043.jpg" /></a>
@@ -31,7 +32,6 @@ Pictures might take a while to load! Please be patient
 <a href="/assets/cars-1994-sl320/sl047.jpg"><image src="/assets/cars-1994-sl320/sl047.jpg" /></a>
 <a href="/assets/cars-1994-sl320/sl048.jpg"><image src="/assets/cars-1994-sl320/sl048.jpg" /></a>
 <a href="/assets/cars-1994-sl320/sl049.jpg"><image src="/assets/cars-1994-sl320/sl049.jpg" /></a>
-<a href="/assets/cars-1994-sl320/sl050.jpg"><image src="/assets/cars-1994-sl320/sl050.jpg" /></a>
 
 <hr>
 
