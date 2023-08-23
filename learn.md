@@ -2,13 +2,13 @@
 layout: page
 title: Learn programming
 description: Learn about programming! This post has a lot of great info to help get you started.
-nav_title: Learn
 url: /learn/
 permalink: /learn/
+show_in_nav: false
 ---
 
 <strong><em>
-  This page is a work in progress- please understand that it's not done yet. If you have ideas on what can be better please consider <a href="https://github.com/bsclifton/clifton.io/issues/new" rel="nofollow noopener" target="_blank">opening an issue on GitHub</a>
+  This page is deprecated. Unfortunately, I just haven't had time to update it :(
 </em></strong>
 
 I love programming and want to share it with as many people as possible. When I was a kid, I had no idea what I wanted to do "when I grow up".

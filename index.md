@@ -14,6 +14,6 @@ description: Brian Clifton is an American computer programmer and businessman li
   I've been writing code since 1993 and I want to share all the things I've learned along the way.
 
   I'm always learning new things, <a title="My GitHub profile" href="https://github.com/{{site.github_username}}" rel="me nofollow noopener" target="_blank">contributing on GitHub</a>,
-  <a title="My Twitter account" href="https://www.twitter.com/{{site.twitter_username}}" rel="me nofollow noopener" target="_blank">tweeting about coding</a>,
-  and <a title="My blog" href="{{site.blog}}">blogging</a>.
+  <a title="My Twitter account" href="https://www.twitter.com/{{site.twitter_username}}" rel="me nofollow noopener" target="_blank">posting about coding</a>,
+  and working on cars.
 </div>
