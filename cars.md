@@ -16,19 +16,6 @@ I **love** classic Mercedes-Benz from the 1980's and 1990s.
 <table>
   <tr>
     <td>
-      <image src="/assets/cars-1994-sl320-1.jpg" />
-    </td>
-    <td>
-      <a href="/cars/1994-sl320/">1994 Mercedes-Benz SL320</a>
-    </td>
-    <td>
-      <a href="https://www.benzworld.org/threads/back-in-a-129-again-1994-sl320-project-journal.3081241/">
-        Click here for project thread on BenzWorld
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
       <image src="/assets/cars-1987-300d-1.png" />
     </td>
     <td>
@@ -53,6 +40,19 @@ I **love** classic Mercedes-Benz from the 1980's and 1990s.
     </td>
     <td>
       <a href="https://www.benzworld.org/threads/cliftons-new-sec-project-journal.2813858/">
+        Click here for project thread on BenzWorld
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <image src="/assets/cars-1994-sl320-1.jpg" />
+    </td>
+    <td>
+      <a href="/cars/1994-sl320/">1994 Mercedes-Benz SL320</a>
+    </td>
+    <td>
+      <a href="https://www.benzworld.org/threads/back-in-a-129-again-1994-sl320-project-journal.3081241/">
         Click here for project thread on BenzWorld
       </a>
     </td>
