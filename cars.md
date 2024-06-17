@@ -27,6 +27,14 @@ I **love** classic Mercedes-Benz from the 1980's and 1990s.
       </a>
     </td>
   </tr>
+  <tr>
+    <td>
+      <image src="/assets/cars-1987-300sdl-1.jpg" />
+    </td>
+    <td>
+      <a href="/cars/1987-300sdl/">1987 Mercedes-Benz 300SDL</a>
+    </td>
+  </tr>
 </table>
 
 ## Formerly owned
