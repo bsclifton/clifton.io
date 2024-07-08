@@ -34,6 +34,11 @@ I **love** classic Mercedes-Benz from the 1980's and 1990s.
     <td>
       <a href="/cars/1987-300sdl/">1987 Mercedes-Benz 300SDL</a>
     </td>
+    <td>
+      <a href="https://126board.com/threads/bclifton-300sdl.17837/">
+        Click here for project thread on 126board
+      </a>
+    </td>
   </tr>
 </table>
 
