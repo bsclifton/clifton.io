@@ -9,20 +9,26 @@ permalink: /about/
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Brian Clifton",
-  "nationality": "American",
-  "gender": "Male",
-  "jobTitle": "Software Engineer",
-  "url": "https://clifton.io/",
-  "image": "https://s.gravatar.com/avatar/fe7f05dee3da7c0b816bac01d40c2f5a?s=512&r=g",
-  "knowsLanguage": "[English,Spanish]",
-  "sameAs": [
-    "https://www.linkedin.com/in/bsclifton",
-    "https://x.com/_brianclifton",
-    "https://www.youtube.com/@bsclifton"
-  ]
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Brian Clifton",
+    "@id":"https://clifton.io/about/#person",
+    "nationality": "American",
+    "gender": "Male",
+    "jobTitle": "Software Engineer",
+    "url": "https://clifton.io/",
+    "image": "https://s.gravatar.com/avatar/fe7f05dee3da7c0b816bac01d40c2f5a?s=512&r=g",
+    "knowsLanguage":
+    [
+        "English",
+        "Spanish"
+    ],
+    "sameAs":
+    [
+        "https://www.linkedin.com/in/bsclifton",
+        "https://x.com/_brianclifton",
+        "https://www.youtube.com/@bsclifton"
+    ]
 }
 </script>
 
