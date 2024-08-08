@@ -7,6 +7,25 @@ url: /about/
 permalink: /about/
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Brian Clifton",
+  "nationality": "American",
+  "gender": "Male",
+  "jobTitle": "Software Engineer",
+  "url": "https://clifton.io/",
+  "image": "https://s.gravatar.com/avatar/fe7f05dee3da7c0b816bac01d40c2f5a?s=512&r=g",
+  "knowsLanguage": "[English,Spanish]",
+  "sameAs": [
+    "https://www.linkedin.com/in/bsclifton",
+    "https://x.com/_brianclifton",
+    "https://www.youtube.com/@bsclifton"
+  ]
+}
+</script>
+
 I joined **Brave** in 2016 where I work on the [Brave web browser](https://brave.com).
 As the VP of Engineering, I get to manage development on the Desktop, Android, and iOS versions of the product.
 It's been amazing seeing our company and product grow!
