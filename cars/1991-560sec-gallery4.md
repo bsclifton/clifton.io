@@ -2,8 +2,8 @@
 layout: page
 title: 1991 Mercedes-Benz 560SEC Gallery (page 4)
 description: Pictures of my 1991 Mercedes-Benz 560SEC (page 4).
-url: /cars/1991-560sec/gallery/3/
-permalink: /cars/1991-560sec/gallery/3/
+url: /cars/1991-560sec/gallery/4/
+permalink: /cars/1991-560sec/gallery/4/
 show_in_nav: false
 ---
 
