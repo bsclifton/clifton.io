@@ -16,7 +16,7 @@ I **love** classic Mercedes-Benz from the 1980's and 1990s.
 <table>
   <tr>
     <td>
-      <image src="/assets/cars-1987-300d-1.png" />
+      <image src="/assets/cars-1987-300d-1.jpg" />
     </td>
     <td>
       <a href="/cars/1987-300d/">1987 Mercedes-Benz 300D</a>
@@ -27,6 +27,10 @@ I **love** classic Mercedes-Benz from the 1980's and 1990s.
       </a>
     </td>
   </tr>
+</table>
+
+## Formerly owned
+<table>
   <tr>
     <td>
       <image src="/assets/cars-1987-300sdl-1.jpg" />
@@ -40,10 +44,6 @@ I **love** classic Mercedes-Benz from the 1980's and 1990s.
       </a>
     </td>
   </tr>
-</table>
-
-## Formerly owned
-<table>
   <tr>
     <td>
       <image src="/assets/cars-1991-560sec-1.jpg" />
